@@ -16,8 +16,15 @@ jobs:
       - name: Set up SSH
         uses: appleboy/ssh-action@master
         with:
+          host: 164.92.120.37
+          username: root
           key: ${{ secrets.DIGITALOCEAN_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
+          port: 22
+          script: |
+            cd /var/www/html/wp-content/themes/<theme_name>
+            git pull
+         
 
       - name: Deploy to DigitalOcean
         run: |
