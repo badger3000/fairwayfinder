@@ -16,16 +16,11 @@ jobs:
       - name: Set up SSH
         uses: appleboy/ssh-action@master
         with:
-          host: 164.92.120.37
-          username: root
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.HOST_USERNAME }}
           key: ${{ secrets.DIGITALOCEAN_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
           port: 22
           script: |
-            cd /var/www/html/wp-content/themes/<theme_name>
+            cd /var/www/html/wp-content/themes/digital-newspaper
             git pull
-         
-
-      - name: Deploy to DigitalOcean
-        run: |
-          ssh -o StrictHostKeyChecking=no root@164.92.120.37 'cd /var/www/html/wp-content/themes/digital-newspaper && git pull'
