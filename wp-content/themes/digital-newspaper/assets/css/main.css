@@ -634,7 +634,7 @@
 	}
 
 	img {
-		width: auto;
+		width: 100%;
 		object-fit: cover;
 	}
 
@@ -3644,6 +3644,7 @@
 	.digital-newspaper-advertisement-block img {
 		display: block;
 		margin: 0 auto;
+		width: auto;
 	}
 
 	body .widget.widget_digital_newspaper_banner_ads_widget {

@@ -74,6 +74,9 @@ URL: http://github.com/kenwheeler/slick
 License: The MIT License
 
 == Changelog ==
+= 1.0.10 - May 17th, 2023 =
+    * Added - image default width
+
 = 1.0.9 - May 4th, 2023 =
     * Added - upsell buttons added
     * Changed - some design tweaks

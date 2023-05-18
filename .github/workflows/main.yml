@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy to DigitalOcean
         run: |
-          ssh -o StrictHostKeyChecking=no root@164.92.120.37 'cd /var/www/html/wp-content/themes/digital-newspaper && git pull'
+          ssh -o StrictHostKeyChecking=no root@164.92.120.37 'cd /var/www/html/ && git pull'
