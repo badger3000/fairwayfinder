@@ -46,7 +46,7 @@ endif;
                   else :
                      if ( is_user_logged_in() && current_user_can( 'edit_theme_options' ) ) {
                         ?>
-                           <a href="<?php echo esc_url( admin_url( '/nav-menus.php?action=locations' ) ); ?>"><?php esc_html_e( 'Setup Bottom Footer Menu', 'digital-newspaper' ); ?></a>
+                           <a href="<?php echo esc_url( admin_url( '/nav-menus.php?action=locations' ) ); ?>"><?php esc_html_e( 'Setup Bottom Footer Menu', 'fairway-finders' ); ?></a>
                         <?php
                      }
                   endif;
@@ -69,7 +69,7 @@ endif;
      ?>
         <div class="site-info <?php if( !DN\digital_newspaper_get_customizer_option( 'bottom_footer_menu_option' ) ) echo esc_attr(' blaze_copyright_align_center');  ?>">
             <?php echo wp_kses_post( str_replace( '%year%', date('Y'), $bottom_footer_site_info ) ); ?>
-				<?php echo sprintf( esc_html( 'Powered By %s.', 'digital-newspaper' ), '<a href="https://blazethemes.com/">' .esc_html( 'BlazeThemes' ). '</a>'  ); ?>
+				<?php echo sprintf( esc_html( 'Powered By %s.', 'fairway-finders' ), '<a href="https://blazethemes.com/">' .esc_html( 'BlazeThemes' ). '</a>'  ); ?>
         </div>
      <?php
    }

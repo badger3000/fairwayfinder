@@ -12,8 +12,8 @@ class Digital_Newspaper_Banner_Ads_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_banner_ads_widget',
-            esc_html__( 'Digital Newspaper : Banner Ads', 'digital-newspaper' ),
-            array( 'description' => __( 'The details of advertisement.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Banner Ads', 'fairway-finders' ),
+            array( 'description' => __( 'The details of advertisement.', 'fairway-finders' ) )
         );
     }
 
@@ -57,21 +57,21 @@ class Digital_Newspaper_Banner_Ads_Widget extends WP_Widget {
                 array(
                     'name'      => 'ad_image',
                     'type'      => 'upload',
-                    'title'     => esc_html__( 'Banner Image', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Banner Image', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'target_url',
                     'type'      => 'url',
-                    'title'     => esc_html__( 'Ad URL', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Ad URL', 'fairway-finders' ),
                 ),
                 array(
                     'name'      => 'target_attr',
                     'type'      => 'select',
-                    'title'     => esc_html__( 'Ad link open in', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Ad link open in', 'fairway-finders' ),
                     'default'   => '_blank',
                     'options'   => array(
-                        '_blank'    => esc_html__( 'Open link in new tab', 'digital-newspaper' ),
-                        '_self'    => esc_html__( 'Open link in same tab', 'digital-newspaper' )
+                        '_blank'    => esc_html__( 'Open link in new tab', 'fairway-finders' ),
+                        '_self'    => esc_html__( 'Open link in same tab', 'fairway-finders' )
                     )
                 )
             );

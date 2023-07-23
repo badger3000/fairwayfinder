@@ -257,23 +257,23 @@ if( !function_exists( 'digital_newspaper_get_customizer_sidebar_array' ) ) :
     function digital_newspaper_get_customizer_sidebar_array() {
         return array(
             'no-sidebar' => array(
-                'label' => esc_html__( 'No Sidebar', 'digital-newspaper' ),
+                'label' => esc_html__( 'No Sidebar', 'fairway-finders' ),
                 'url'   => '%s/assets/images/customizer/no_sidebar.jpg'
             ),
             'left-sidebar' => array(
-                'label' => esc_html__( 'Left Sidebar', 'digital-newspaper' ),
+                'label' => esc_html__( 'Left Sidebar', 'fairway-finders' ),
                 'url'   => '%s/assets/images/customizer/left_sidebar.jpg'
             ),
             'right-sidebar' => array(
-                'label' => esc_html__( 'Right Sidebar', 'digital-newspaper' ),
+                'label' => esc_html__( 'Right Sidebar', 'fairway-finders' ),
                 'url'   => '%s/assets/images/customizer/right_sidebar.jpg'
             ),
             'left-both-sidebar' => array(
-                'label' => esc_html__( 'Left Both Sidebar', 'digital-newspaper' ),
+                'label' => esc_html__( 'Left Both Sidebar', 'fairway-finders' ),
                 'url'   => '%s/assets/images/customizer/left_both_sidebar.jpg'
             ),
             'right-both-sidebar' => array(
-                'label' => esc_html__( 'Right Both Sidebar', 'digital-newspaper' ),
+                'label' => esc_html__( 'Right Both Sidebar', 'fairway-finders' ),
                 'url'   => '%s/assets/images/customizer/right_both_sidebar.jpg'
             )
         );

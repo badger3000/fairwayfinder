@@ -12,8 +12,8 @@ class Digital_Newspaper_Carousel_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_carousel_widget',
-            esc_html__( 'Digital Newspaper : Carousel Posts', 'digital-newspaper' ),
-            array( 'description' => __( 'A collection of posts from specific category for carousel slide.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Carousel Posts', 'fairway-finders' ),
+            array( 'description' => __( 'A collection of posts from specific category for carousel slide.', 'fairway-finders' ) )
         );
     }
 
@@ -89,7 +89,7 @@ class Digital_Newspaper_Carousel_Widget extends WP_Widget {
      */
     function widget_fields() {
         $categories = get_categories();
-        $categories_options[''] = esc_html__( 'Select category', 'digital-newspaper' );
+        $categories_options[''] = esc_html__( 'Select category', 'fairway-finders' );
         foreach( $categories as $category ) :
             $categories_options[$category->slug] = $category->name. ' (' .$category->count. ') ';
         endforeach;
@@ -97,15 +97,15 @@ class Digital_Newspaper_Carousel_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Highlights', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Highlights', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'posts_category',
                     'type'      => 'select',
-                    'title'     => esc_html__( 'Categories', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Choose the category to display for carousel posts', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Categories', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Choose the category to display for carousel posts', 'fairway-finders' ),
                     'options'   => $categories_options
                 )
             );

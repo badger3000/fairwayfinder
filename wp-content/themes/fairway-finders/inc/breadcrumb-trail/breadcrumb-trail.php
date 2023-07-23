@@ -28,7 +28,7 @@ add_action( 'after_setup_theme', 'breadcrumb_trail_theme_setup', 12 );
  * @return void
  */
 function breadcrumb_trail_setup() {
-	load_plugin_textdomain( 'digital-newspaper', false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'lang' );
+	load_plugin_textdomain( 'fairway-finders', false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'lang' );
 }
 
 /**

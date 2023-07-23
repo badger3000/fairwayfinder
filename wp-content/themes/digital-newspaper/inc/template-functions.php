@@ -300,35 +300,35 @@ if( ! function_exists( 'digital_newspaper_get_date_filter_choices_array' ) ) :
 		return apply_filters( 'digital_newspaper_get_date_filter_choices_array_filter', array(
 			array(
 				'value' => 'all',
-				'label' => esc_html__('All', 'digital-newspaper' )
+				'label' => esc_html__('All', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-seven-days',
-				'label' => esc_html__('Last 7 days', 'digital-newspaper' )
+				'label' => esc_html__('Last 7 days', 'fairway-finders' )
 			),
 			array(
 				'value' => 'today',
-				'label' => esc_html__('Today', 'digital-newspaper' )
+				'label' => esc_html__('Today', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-week',
-				'label' => esc_html__('This Week', 'digital-newspaper' )
+				'label' => esc_html__('This Week', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-week',
-				'label' => esc_html__('Last Week', 'digital-newspaper' )
+				'label' => esc_html__('Last Week', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-month',
-				'label' => esc_html__('This Month', 'digital-newspaper' )
+				'label' => esc_html__('This Month', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-month',
-				'label' => esc_html__('Last Month', 'digital-newspaper' )
+				'label' => esc_html__('Last Month', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-year',
-				'label' => esc_html__('This Year', 'digital-newspaper' )
+				'label' => esc_html__('This Year', 'fairway-finders' )
 			)
 		));
 	}
@@ -343,35 +343,35 @@ if( ! function_exists( 'digital_newspaper_get_random_news_filter_choices_array' 
 		return apply_filters( 'digital_newspaper_get_date_filter_choices_array_filter', array(
 			array(
 				'value' => 'random',
-				'label' => esc_html__('Random', 'digital-newspaper' )
+				'label' => esc_html__('Random', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-seven-days',
-				'label' => esc_html__('Last 7 days', 'digital-newspaper' )
+				'label' => esc_html__('Last 7 days', 'fairway-finders' )
 			),
 			array(
 				'value' => 'today',
-				'label' => esc_html__('Today', 'digital-newspaper' )
+				'label' => esc_html__('Today', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-week',
-				'label' => esc_html__('This Week', 'digital-newspaper' )
+				'label' => esc_html__('This Week', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-week',
-				'label' => esc_html__('Last Week', 'digital-newspaper' )
+				'label' => esc_html__('Last Week', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-month',
-				'label' => esc_html__('This Month', 'digital-newspaper' )
+				'label' => esc_html__('This Month', 'fairway-finders' )
 			),
 			array(
 				'value' => 'last-month',
-				'label' => esc_html__('Last Month', 'digital-newspaper' )
+				'label' => esc_html__('Last Month', 'fairway-finders' )
 			),
 			array(
 				'value' => 'this-year',
-				'label' => esc_html__('This Year', 'digital-newspaper' )
+				'label' => esc_html__('This Year', 'fairway-finders' )
 			)
 		));
 	}
@@ -567,7 +567,7 @@ function digital_newspaper_filter_posts_load_tab_content() {
 			$res['posts'] = ob_get_clean();
 		else :
 			$res['loaded'] = false;
-			$res['posts'] = esc_html__( 'No posts found', 'digital-newspaper' );
+			$res['posts'] = esc_html__( 'No posts found', 'fairway-finders' );
 		endif;
 		echo json_encode( $res );
 		wp_die();
@@ -630,8 +630,8 @@ if( ! function_exists( 'digital_newspaper_search_posts_content' ) ) :
 			ob_start();
 				?>
 				<div class="search-results-wrap no-posts-found">
-					<h2 class="no-posts-found-title"><?php echo esc_html__( '404 Not Found', 'digital-newspaper' ); ?></h2>
-					<p class="no-posts-found-description"><?php echo esc_html__( 'It looks like nothing was found at this location. Maybe try another search?', 'digital-newspaper' ); ?></p>
+					<h2 class="no-posts-found-title"><?php echo esc_html__( '404 Not Found', 'fairway-finders' ); ?></h2>
+					<p class="no-posts-found-description"><?php echo esc_html__( 'It looks like nothing was found at this location. Maybe try another search?', 'fairway-finders' ); ?></p>
 				</div><!-- .search-results-wrap -->
 				<?php
 			$res['posts'] = ob_get_clean();

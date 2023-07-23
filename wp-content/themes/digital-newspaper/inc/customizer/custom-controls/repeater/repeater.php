@@ -119,7 +119,7 @@ class Digital_Newspaper_WP_Custom_Repeater extends \WP_Customize_Control {
      */
     function render_control( $field_key, $field, $current_item_value ) {
         $type = $field->type;
-        $label = isset( $field->label ) ? $field->label : esc_html__( 'Item Label', 'digital-newspaper' );
+        $label = isset( $field->label ) ? $field->label : esc_html__( 'Item Label', 'fairway-finders' );
         $description = isset( $field->description ) ? $field->description : false;
         $default_value = isset( $field->default ) ? $field->default : '';
         // filter the contrrol type parameter
@@ -153,7 +153,7 @@ class Digital_Newspaper_WP_Custom_Repeater extends \WP_Customize_Control {
                             ?>
                             <span class="remove-image dashicons dashicons-trash"></span>
                         </div>
-                        <div class="add-image-trigger <?php if( $current_item_value->$field_key ) echo 'no-trigger'; ?>"><?php echo esc_html__( 'Upload Image', 'digital-newspaper'); ?></div>
+                        <div class="add-image-trigger <?php if( $current_item_value->$field_key ) echo 'no-trigger'; ?>"><?php echo esc_html__( 'Upload Image', 'fairway-finders'); ?></div>
                         <input class="repeater-field-value-holder" data-default="<?php echo esc_attr( $default_value ); ?>" data-key="<?php echo esc_attr( $field_key ); ?>" type="hidden" value="<?php echo esc_attr($current_item_value->$field_key); ?>"/>
                     </div>
                 </div>

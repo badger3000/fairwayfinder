@@ -22,7 +22,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
 <body <?php body_class(); ?> <?php digital_newspaper_schema_body_attributes(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'digital-newspaper' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fairway-finders' ); ?></a>
 	<div class="digital_newspaper_ovelay_div"></div>
 	<?php
 		/**

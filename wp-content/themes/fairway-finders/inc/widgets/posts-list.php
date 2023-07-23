@@ -12,8 +12,8 @@ class Digital_Newspaper_Posts_List_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_posts_list_widget',
-            esc_html__( 'Digital Newspaper : Posts List', 'digital-newspaper' ),
-            array( 'description' => __( 'A collection of posts from specific category displayed in list layout.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Posts List', 'fairway-finders' ),
+            array( 'description' => __( 'A collection of posts from specific category displayed in list layout.', 'fairway-finders' ) )
         );
     }
 
@@ -109,7 +109,7 @@ class Digital_Newspaper_Posts_List_Widget extends WP_Widget {
      */
     function widget_fields() {
         $categories = get_categories();
-        $categories_options[''] = esc_html__( 'Select category', 'digital-newspaper' );
+        $categories_options[''] = esc_html__( 'Select category', 'fairway-finders' );
         foreach( $categories as $category ) :
             $categories_options[$category->slug] = $category->name. ' (' .$category->count. ') ';
         endforeach;
@@ -117,15 +117,15 @@ class Digital_Newspaper_Posts_List_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Trending News', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Trending News', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'posts_category',
                     'type'      => 'select',
-                    'title'     => esc_html__( 'Categories', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Choose the category to display list of posts', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Categories', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Choose the category to display list of posts', 'fairway-finders' ),
                     'options'   => $categories_options
                 )
             );

@@ -12,8 +12,8 @@ class Digital_Newspaper_Widget_Title_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_widget_title_widget',
-            esc_html__( 'Digital Newspaper : Widget Title', 'digital-newspaper' ),
-            array( 'description' => __( 'Theme custom widget title.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Widget Title', 'fairway-finders' ),
+            array( 'description' => __( 'Theme custom widget title.', 'fairway-finders' ) )
         );
     }
 
@@ -47,19 +47,19 @@ class Digital_Newspaper_Widget_Title_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Custom Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here.', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Latest News', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Custom Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here.', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Latest News', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'widget_title_align',
                     'type'      => 'select',
-                    'title'     => esc_html__( 'Text Align', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'change the alignment of the wiget title text.', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Text Align', 'fairway-finders' ),
+                    'description'=> esc_html__( 'change the alignment of the wiget title text.', 'fairway-finders' ),
                     'options'   => array(
-                        'left'  => esc_html__( 'Left', 'digital-newspaper' ),
-                        'center'=> esc_html__( 'Center', 'digital-newspaper' ),
-                        'right' => esc_html__( 'Right', 'digital-newspaper' )
+                        'left'  => esc_html__( 'Left', 'fairway-finders' ),
+                        'center'=> esc_html__( 'Center', 'fairway-finders' ),
+                        'right' => esc_html__( 'Right', 'fairway-finders' )
                     )
                 )
             );

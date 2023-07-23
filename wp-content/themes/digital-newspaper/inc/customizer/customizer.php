@@ -14,7 +14,7 @@ function digital_newspaper_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-    $wp_customize->get_section( 'background_image' )->title = esc_html__( 'Background', 'digital-newspaper' );
+    $wp_customize->get_section( 'background_image' )->title = esc_html__( 'Background', 'fairway-finders' );
     $wp_customize->remove_control( 'background_color' );
     
 	require get_template_directory() . '/inc/customizer/custom-controls/section-heading/section-heading.php'; // section heading control
@@ -457,7 +457,7 @@ function digital_newspaper_customize_register( $wp_customize ) {
     ));
     $wp_customize->add_control( 
         new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'theme_color_header', array(
-            'label'	      => esc_html__( 'Theme Color', 'digital-newspaper' ),
+            'label'	      => esc_html__( 'Theme Color', 'fairway-finders' ),
             'section'     => 'colors',
             'settings'    => 'theme_color_header'
         ))
@@ -471,7 +471,7 @@ function digital_newspaper_customize_register( $wp_customize ) {
     ));
     $wp_customize->add_control( 
         new Digital_Newspaper_WP_Color_Picker_Control( $wp_customize, 'theme_color', array(
-            'label'	      => esc_html__( 'Theme Color', 'digital-newspaper' ),
+            'label'	      => esc_html__( 'Theme Color', 'fairway-finders' ),
             'section'     => 'colors',
             'settings'    => 'theme_color'
         ))
@@ -484,7 +484,7 @@ function digital_newspaper_customize_register( $wp_customize ) {
     ));
     $wp_customize->add_control( 
         new Digital_Newspaper_WP_Color_Group_Control( $wp_customize, 'site_background_color', array(
-            'label'	      => esc_html__( 'Background Color', 'digital-newspaper' ),
+            'label'	      => esc_html__( 'Background Color', 'fairway-finders' ),
             'section'     => 'background_image',
             'settings'    => 'site_background_color',
             'priority'  => 1

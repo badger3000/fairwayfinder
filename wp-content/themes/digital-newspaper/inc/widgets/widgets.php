@@ -14,9 +14,9 @@
 function digital_newspaper_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Sidebar', 'fairway-finders' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -27,9 +27,9 @@ function digital_newspaper_widgets_init() {
 	// left sidebar
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Left Sidebar', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Left Sidebar', 'fairway-finders' ),
 			'id'            => 'left-sidebar',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -40,9 +40,9 @@ function digital_newspaper_widgets_init() {
 	// header toggle sidebar
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Header Toggle Sidebar', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Header Toggle Sidebar', 'fairway-finders' ),
 			'id'            => 'header-toggle-sidebar',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -53,9 +53,9 @@ function digital_newspaper_widgets_init() {
 	// front right sidebar
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Frontpage - Middle Right Sidebar', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Frontpage - Middle Right Sidebar', 'fairway-finders' ),
 			'id'            => 'front-right-sidebar',
-			'description'   => esc_html__( 'Add widgets suitable for middle right here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets suitable for middle right here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -66,9 +66,9 @@ function digital_newspaper_widgets_init() {
 	// front left sidebar
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Frontpage - Middle Left Sidebar', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Frontpage - Middle Left Sidebar', 'fairway-finders' ),
 			'id'            => 'front-left-sidebar',
-			'description'   => esc_html__( 'Add widgets suitable for middle left here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets suitable for middle left here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -79,9 +79,9 @@ function digital_newspaper_widgets_init() {
 	// footer sidebar - column 1
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Sidebar - Column 1', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Footer Sidebar - Column 1', 'fairway-finders' ),
 			'id'            => 'footer-sidebar--column-1',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -92,9 +92,9 @@ function digital_newspaper_widgets_init() {
 	// footer sidebar - column 2
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Sidebar - Column 2', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Footer Sidebar - Column 2', 'fairway-finders' ),
 			'id'            => 'footer-sidebar--column-2',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -105,9 +105,9 @@ function digital_newspaper_widgets_init() {
 	// footer sidebar - column 3
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Sidebar - Column 3', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Footer Sidebar - Column 3', 'fairway-finders' ),
 			'id'            => 'footer-sidebar--column-3',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',
@@ -118,9 +118,9 @@ function digital_newspaper_widgets_init() {
 	// footer sidebar - column 4
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Sidebar - Column 4', 'digital-newspaper' ),
+			'name'          => esc_html__( 'Footer Sidebar - Column 4', 'fairway-finders' ),
 			'id'            => 'footer-sidebar--column-4',
-			'description'   => esc_html__( 'Add widgets here.', 'digital-newspaper' ),
+			'description'   => esc_html__( 'Add widgets here.', 'fairway-finders' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title"><span>',

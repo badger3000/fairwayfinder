@@ -85,7 +85,7 @@ if( !function_exists( 'digital_newspaper_customizer_about_theme_panel' ) ) :
          * @since 1.0.0
          */
         $wp_customize->add_section( DIGITAL_NEWSPAPER_PREFIX . 'about_section', array(
-            'title' => esc_html__( 'About Theme', 'digital-newspaper' ),
+            'title' => esc_html__( 'About Theme', 'fairway-finders' ),
             'priority'  => 1
         ));
 
@@ -95,13 +95,13 @@ if( !function_exists( 'digital_newspaper_customizer_about_theme_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Info_Box_Control( $wp_customize, 'site_documentation_info', array(
-                'label'	      => esc_html__( 'Theme Documentation', 'digital-newspaper' ),
-                'description' => esc_html__( 'We have well prepared documentation which includes overall instructions and recommendations that are required in this theme.', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Theme Documentation', 'fairway-finders' ),
+                'description' => esc_html__( 'We have well prepared documentation which includes overall instructions and recommendations that are required in this theme.', 'fairway-finders' ),
                 'section'     => DIGITAL_NEWSPAPER_PREFIX . 'about_section',
                 'settings'    => 'site_documentation_info',
                 'choices' => array(
                     array(
-                        'label' => esc_html__( 'View Documentation', 'digital-newspaper' ),
+                        'label' => esc_html__( 'View Documentation', 'fairway-finders' ),
                         'url'   => esc_url( '//doc.blazethemes.com/digital-newspaper' )
                     )
                 )
@@ -114,13 +114,13 @@ if( !function_exists( 'digital_newspaper_customizer_about_theme_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Info_Box_Control( $wp_customize, 'site_support_info', array(
-                'label'	      => esc_html__( 'Theme Support', 'digital-newspaper' ),
-                'description' => esc_html__( 'We provide 24/7 support regarding any theme issue. Our support team will help you to solve any kind of issue. Feel free to contact us.', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Theme Support', 'fairway-finders' ),
+                'description' => esc_html__( 'We provide 24/7 support regarding any theme issue. Our support team will help you to solve any kind of issue. Feel free to contact us.', 'fairway-finders' ),
                 'section'     => DIGITAL_NEWSPAPER_PREFIX . 'about_section',
                 'settings'    => 'site_support_info',
                 'choices' => array(
                     array(
-                        'label' => esc_html__( 'Support Form', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Support Form', 'fairway-finders' ),
                         'url'   => esc_url( '//blazethemes.com/support' )
                     )
                 )
@@ -143,13 +143,13 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
          * @since 1.0.0
          */
         $wp_customize->add_panel( 'digital_newspaper_global_panel', array(
-            'title' => esc_html__( 'Global', 'digital-newspaper' ),
+            'title' => esc_html__( 'Global', 'fairway-finders' ),
             'priority'  => 5
         ));
 
         // section- seo/misc settings section
         $wp_customize->add_section( 'digital_newspaper_seo_misc_section', array(
-            'title' => esc_html__( 'SEO / Misc', 'digital-newspaper' ),
+            'title' => esc_html__( 'SEO / Misc', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
 
@@ -161,7 +161,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'site_schema_ready', array(
-                'label'	      => esc_html__( 'Make website schema ready', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Make website schema ready', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_seo_misc_section',
                 'settings'    => 'site_schema_ready'
             ))
@@ -175,11 +175,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'site_date_to_show', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_seo_misc_section',
-            'label'     => esc_html__( 'Date to display', 'digital-newspaper' ),
-            'description' => esc_html__( 'Whether to show date published or modified date.', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Date to display', 'fairway-finders' ),
+            'description' => esc_html__( 'Whether to show date published or modified date.', 'fairway-finders' ),
             'choices'   => array(
-                'published'  => __( 'Published date', 'digital-newspaper' ),
-                'modified'   => __( 'Modified date', 'digital-newspaper' )
+                'published'  => __( 'Published date', 'fairway-finders' ),
+                'modified'   => __( 'Modified date', 'fairway-finders' )
             )
         ));
 
@@ -191,11 +191,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'site_date_format', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_seo_misc_section',
-            'label'     => esc_html__( 'Date format', 'digital-newspaper' ),
-            'description' => esc_html__( 'Date format applied to single and archive pages.', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Date format', 'fairway-finders' ),
+            'description' => esc_html__( 'Date format applied to single and archive pages.', 'fairway-finders' ),
             'choices'   => array(
-                'theme_format'  => __( 'Default by theme', 'digital-newspaper' ),
-                'default'   => __( 'Wordpress default date', 'digital-newspaper' )
+                'theme_format'  => __( 'Default by theme', 'fairway-finders' ),
+                'default'   => __( 'Wordpress default date', 'fairway-finders' )
             )
         ));
 
@@ -205,7 +205,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'preset_colors_heading', array(
-                'label'	      => esc_html__( 'Theme Presets', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Theme Presets', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_colors_heading'
             ))
@@ -219,7 +219,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_1', array(
-                'label'	      => esc_html__( 'Color 1', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 1', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_1',
                 'variable'   => '--digital-newspaper-global-preset-color-1'
@@ -234,7 +234,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_2', array(
-                'label'	      => esc_html__( 'Color 2', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 2', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_2',
                 'variable'   => '--digital-newspaper-global-preset-color-2'
@@ -249,7 +249,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_3', array(
-                'label'	      => esc_html__( 'Color 3', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 3', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_3',
                 'variable'   => '--digital-newspaper-global-preset-color-3'
@@ -264,7 +264,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_4', array(
-                'label'	      => esc_html__( 'Color 4', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 4', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_4',
                 'variable'   => '--digital-newspaper-global-preset-color-4'
@@ -279,7 +279,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_5', array(
-                'label'	      => esc_html__( 'Color 5', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 5', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_5',
                 'variable'   => '--digital-newspaper-global-preset-color-5'
@@ -294,7 +294,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_6', array(
-                'label'	      => esc_html__( 'Color 6', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Color 6', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_6',
                 'variable'   => '--digital-newspaper-global-preset-color-6'
@@ -309,7 +309,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_7', array(
-                'label'       => esc_html__( 'Color 7', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 7', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_7',
                 'variable'   => '--digital-newspaper-global-preset-color-7'
@@ -324,7 +324,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_8', array(
-                'label'       => esc_html__( 'Color 8', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 8', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_8',
                 'variable'   => '--digital-newspaper-global-preset-color-8'
@@ -339,7 +339,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_9', array(
-                'label'       => esc_html__( 'Color 9', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 9', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_9',
                 'variable'   => '--digital-newspaper-global-preset-color-9'
@@ -354,7 +354,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_10', array(
-                'label'       => esc_html__( 'Color 10', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 10', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_10',
                 'variable'   => '--digital-newspaper-global-preset-color-10'
@@ -369,7 +369,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_11', array(
-                'label'       => esc_html__( 'Color 11', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 11', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_11',
                 'variable'   => '--digital-newspaper-global-preset-color-11'
@@ -384,7 +384,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Color_Picker_Control( $wp_customize, 'preset_color_12', array(
-                'label'       => esc_html__( 'Color 12', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Color 12', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_color_12',
                 'variable'   => '--digital-newspaper-global-preset-color-12'
@@ -397,7 +397,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'gradient_preset_colors_heading', array(
-                'label'	      => esc_html__( 'Gradient Presets', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient Presets', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'gradient_preset_colors_heading'
             ))
@@ -411,7 +411,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_1', array(
-                'label'	      => esc_html__( 'Gradient 1', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 1', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_1',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-1'
@@ -426,7 +426,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_2', array(
-                'label'	      => esc_html__( 'Gradient 2', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 2', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_2',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-2'
@@ -441,7 +441,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_3', array(
-                'label'	      => esc_html__( 'Gradient 3', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 3', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_3',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-3'
@@ -456,7 +456,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_4', array(
-                'label'	      => esc_html__( 'Gradient 4', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 4', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_4',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-4'
@@ -471,7 +471,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_5', array(
-                'label'	      => esc_html__( 'Gradient 5', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 5', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_5',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-5'
@@ -486,7 +486,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_6', array(
-                'label'	      => esc_html__( 'Gradient 6', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Gradient 6', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_6',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-6'
@@ -501,7 +501,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_7', array(
-                'label'       => esc_html__( 'Gradient 7', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 7', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_7',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-7'
@@ -516,7 +516,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_8', array(
-                'label'       => esc_html__( 'Gradient 8', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 8', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_8',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-8'
@@ -531,7 +531,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_9', array(
-                'label'       => esc_html__( 'Gradient 9', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 9', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_9',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-9'
@@ -546,7 +546,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_10', array(
-                'label'       => esc_html__( 'Gradient 10', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 10', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_10',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-10'
@@ -561,7 +561,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_11', array(
-                'label'       => esc_html__( 'Gradient 11', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 11', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_11',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-11'
@@ -576,7 +576,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Preset_Gradient_Picker_Control( $wp_customize, 'preset_gradient_12', array(
-                'label'       => esc_html__( 'Gradient 12', 'digital-newspaper' ),
+                'label'       => esc_html__( 'Gradient 12', 'fairway-finders' ),
                 'section'     => 'colors',
                 'settings'    => 'preset_gradient_12',
                 'variable'   => '--digital-newspaper-global-preset-gradient-color-12'
@@ -585,7 +585,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- category colors section
         $wp_customize->add_section( 'digital_newspaper_category_colors_section', array(
-            'title' => esc_html__( 'Category Colors', 'digital-newspaper' ),
+            'title' => esc_html__( 'Category Colors', 'fairway-finders' ),
             'priority'  => 40
         ));
 
@@ -609,7 +609,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- preloader section
         $wp_customize->add_section( 'digital_newspaper_preloader_section', array(
-            'title' => esc_html__( 'Preloader', 'digital-newspaper' ),
+            'title' => esc_html__( 'Preloader', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
         
@@ -620,7 +620,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'preloader_option', array(
-                'label'	      => esc_html__( 'Enable site preloader', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable site preloader', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_preloader_section',
                 'settings'    => 'preloader_option'
             ))
@@ -628,7 +628,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- website styles section
         $wp_customize->add_section( 'digital_newspaper_website_styles_section', array(
-            'title' => esc_html__( 'Website Styles', 'digital-newspaper' ),
+            'title' => esc_html__( 'Website Styles', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
 
@@ -638,7 +638,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'website_block_top_border_header', array(
-                'label'	      => esc_html__( 'Block Top Border Style', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Block Top Border Style', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_styles_section',
                 'settings'    => 'website_block_top_border_header'
             ))
@@ -652,7 +652,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'website_block_border_top_option', array(
-                'label'	      => esc_html__( 'Website block top border', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Website block top border', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_styles_section',
                 'settings'    => 'website_block_border_top_option'
             ))
@@ -665,14 +665,14 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Color_Group_Control( $wp_customize, 'website_block_border_top_color', array(
-                'label'	      => esc_html__( 'Border Color', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Border Color', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_styles_section',
                 'settings'    => 'website_block_border_top_color'
             ))
         );
         // section- website layout section
         $wp_customize->add_section( 'digital_newspaper_website_layout_section', array(
-            'title' => esc_html__( 'Website Layout', 'digital-newspaper' ),
+            'title' => esc_html__( 'Website Layout', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
         
@@ -682,7 +682,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'website_layout_header', array(
-                'label'	      => esc_html__( 'Website Layout', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Website Layout', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_layout_section',
                 'settings'    => 'website_layout_header'
             ))
@@ -702,11 +702,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
                 'section'  => 'digital_newspaper_website_layout_section',
                 'choices'  => array(
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed-width.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full-width.jpg'
                     )
                 )
@@ -719,7 +719,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'website_content_layout_header', array(
-                'label'	      => esc_html__( 'Website Content Global Layout', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Website Content Global Layout', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_layout_section',
                 'settings'    => 'website_content_layout_header'
             ))
@@ -738,11 +738,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
                 'section'  => 'digital_newspaper_website_layout_section',
                 'choices'  => array(
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -755,7 +755,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'website_block_title_layout_header', array(
-                'label'	      => esc_html__( 'Block Title Layout', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Block Title Layout', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_website_layout_section',
                 'settings'    => 'website_block_title_layout_header'
             ))
@@ -775,11 +775,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
                 'section'  => 'digital_newspaper_website_layout_section',
                 'choices'  => array(
                     'layout-one' => array(
-                        'label' => esc_html__( 'Layout One', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout One', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/block-title-layout-one.jpg'
                     ),
                     'layout-four' => array(
-                        'label' => esc_html__( 'Layout Four', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout Four', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/block-title-layout-four.jpg'
                     )
                 )
@@ -788,7 +788,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- animation section
         $wp_customize->add_section( 'digital_newspaper_animation_section', array(
-            'title' => esc_html__( 'Animation / Hover Effects', 'digital-newspaper' ),
+            'title' => esc_html__( 'Animation / Hover Effects', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
 
@@ -798,7 +798,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'website_hover_effects_header', array(
-                'label'	      => esc_html__( 'Hover Effects Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Hover Effects Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_animation_section',
                 'settings'    => 'website_hover_effects_header'
             ))
@@ -813,12 +813,12 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'post_title_hover_effects', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_animation_section',
-            'label'     => esc_html__( 'Post title hover effects', 'digital-newspaper' ),
-            'description' => esc_html__( 'Applied to post titles listed in archive pages.', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Post title hover effects', 'fairway-finders' ),
+            'description' => esc_html__( 'Applied to post titles listed in archive pages.', 'fairway-finders' ),
             'choices'   => array(
-                'none' => __( 'None', 'digital-newspaper' ),
-                'one'  => __( 'Effect One', 'digital-newspaper' ),
-                'four'   => __( 'Effect Two', 'digital-newspaper' )
+                'none' => __( 'None', 'fairway-finders' ),
+                'one'  => __( 'Effect One', 'fairway-finders' ),
+                'four'   => __( 'Effect Two', 'fairway-finders' )
             )
         ));
 
@@ -831,17 +831,17 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'site_image_hover_effects', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_animation_section',
-            'label'     => esc_html__( 'Image hover effects', 'digital-newspaper' ),
-            'description' => esc_html__( 'Applied to post thumbanails listed in archive pages.', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Image hover effects', 'fairway-finders' ),
+            'description' => esc_html__( 'Applied to post thumbanails listed in archive pages.', 'fairway-finders' ),
             'choices'   => array(
-                'none' => __( 'None', 'digital-newspaper' ),
-                'six'   => __( 'Effect One', 'digital-newspaper' )
+                'none' => __( 'None', 'fairway-finders' ),
+                'six'   => __( 'Effect One', 'fairway-finders' )
             )
         ));
 
         // section- social icons section
         $wp_customize->add_section( 'digital_newspaper_social_icons_section', array(
-            'title' => esc_html__( 'Social Icons', 'digital-newspaper' ),
+            'title' => esc_html__( 'Social Icons', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
         
@@ -851,7 +851,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'social_icons_settings_header', array(
-                'label'	      => esc_html__( 'Social Icons Settings', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Social Icons Settings', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_social_icons_section',
                 'settings'    => 'social_icons_settings_header'
             ))
@@ -866,11 +866,11 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'social_icons_target', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_social_icons_section',
-            'label'     => esc_html__( 'Social Icon Link Open in', 'digital-newspaper' ),
-            'description' => esc_html__( 'Sets the target attribute according to the value.', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Social Icon Link Open in', 'fairway-finders' ),
+            'description' => esc_html__( 'Sets the target attribute according to the value.', 'fairway-finders' ),
             'choices'   => array(
-                '_blank' => esc_html__( 'Open link in new tab', 'digital-newspaper' ),
-                '_self'  => esc_html__( 'Open link in same tab', 'digital-newspaper' )
+                '_blank' => esc_html__( 'Open link in new tab', 'fairway-finders' ),
+                '_self'  => esc_html__( 'Open link in same tab', 'fairway-finders' )
             )
         ));
 
@@ -882,23 +882,23 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control(
             new Digital_Newspaper_WP_Custom_Repeater( $wp_customize, 'social_icons', array(
-                'label'         => esc_html__( 'Social Icons', 'digital-newspaper' ),
-                'description'   => esc_html__( 'Hold bar icon and drag vertically to re-order the icons', 'digital-newspaper' ),
+                'label'         => esc_html__( 'Social Icons', 'fairway-finders' ),
+                'description'   => esc_html__( 'Hold bar icon and drag vertically to re-order the icons', 'fairway-finders' ),
                 'section'       => 'digital_newspaper_social_icons_section',
                 'settings'      => 'social_icons',
                 'row_label'     => 'inherit-icon_class',
-                'add_new_label' => esc_html__( 'Add New Icon', 'digital-newspaper' ),
+                'add_new_label' => esc_html__( 'Add New Icon', 'fairway-finders' ),
                 'fields'        => array(
                     'icon_class'   => array(
                         'type'          => 'fontawesome-icon-picker',
-                        'label'         => esc_html__( 'Social Icon', 'digital-newspaper' ),
-                        'description'   => esc_html__( 'Select from dropdown.', 'digital-newspaper' ),
+                        'label'         => esc_html__( 'Social Icon', 'fairway-finders' ),
+                        'description'   => esc_html__( 'Select from dropdown.', 'fairway-finders' ),
                         'default'       => esc_attr( 'fab fa-instagram' )
 
                     ),
                     'icon_url'  => array(
                         'type'      => 'url',
-                        'label'     => esc_html__( 'URL for icon', 'digital-newspaper' ),
+                        'label'     => esc_html__( 'URL for icon', 'fairway-finders' ),
                         'default'   => ''
                     ),
                     'item_option'             => 'show'
@@ -908,7 +908,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- buttons section
         $wp_customize->add_section( 'digital_newspaper_buttons_section', array(
-            'title' => esc_html__( 'Buttons', 'digital-newspaper' ),
+            'title' => esc_html__( 'Buttons', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
 
@@ -920,7 +920,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Icon_Text_Control( $wp_customize, 'global_button_text', array(
-                'label'     => esc_html__( 'Button label', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Button label', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_buttons_section',
                 'settings'    => 'global_button_text',
                 'icons' => array( "fas fa-ban", "fas fa-angle-right", "fas fa-arrow-alt-circle-right", "far fa-arrow-alt-circle-right", "fas fa-angle-double-right", "fas fa-long-arrow-alt-right", "fas fa-arrow-right", "fas fa-arrow-circle-right", "fas fa-chevron-circle-right", "fas fa-caret-right", "fas fa-hand-point-right", "fas fa-caret-square-right", "far fa-caret-square-right" )
@@ -929,7 +929,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         
         // section- sidebar options section
         $wp_customize->add_section( 'digital_newspaper_sidebar_options_section', array(
-            'title' => esc_html__( 'Sidebar Options', 'digital-newspaper' ),
+            'title' => esc_html__( 'Sidebar Options', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
 
@@ -939,7 +939,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'frontpage_sidebar_layout_header', array(
-                'label'	      => esc_html__( 'Frontpage Sidebar Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Frontpage Sidebar Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'frontpage_sidebar_layout_header'
             ))
@@ -968,7 +968,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'frontpage_sidebar_sticky_option', array(
-                'label'	      => esc_html__( 'Enable sidebar sticky', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable sidebar sticky', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'frontpage_sidebar_sticky_option'
             ))
@@ -980,7 +980,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'archive_sidebar_layout_header', array(
-                'label'	      => esc_html__( 'Archive Sidebar Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Archive Sidebar Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'archive_sidebar_layout_header'
             ))
@@ -1009,7 +1009,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'archive_sidebar_sticky_option', array(
-                'label'	      => esc_html__( 'Enable sidebar sticky', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable sidebar sticky', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'archive_sidebar_sticky_option'
             ))
@@ -1021,7 +1021,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'single_sidebar_layout_header', array(
-                'label'	      => esc_html__( 'Post Sidebar Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Sidebar Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'single_sidebar_layout_header'
             ))
@@ -1050,7 +1050,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'single_sidebar_sticky_option', array(
-                'label'	      => esc_html__( 'Enable sidebar sticky', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable sidebar sticky', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'single_sidebar_sticky_option'
             ))
@@ -1062,7 +1062,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'page_sidebar_layout_header', array(
-                'label'	      => esc_html__( 'Page Sidebar Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Page Sidebar Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'page_sidebar_layout_header'
             ))
@@ -1091,7 +1091,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'page_sidebar_sticky_option', array(
-                'label'	      => esc_html__( 'Enable sidebar sticky', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable sidebar sticky', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_sidebar_options_section',
                 'settings'    => 'page_sidebar_sticky_option'
             ))
@@ -1099,7 +1099,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
 
         // section- breadcrumb options section
         $wp_customize->add_section( 'digital_newspaper_breadcrumb_options_section', array(
-            'title' => esc_html__( 'Breadcrumb Options', 'digital-newspaper' ),
+            'title' => esc_html__( 'Breadcrumb Options', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
         
@@ -1110,7 +1110,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'site_breadcrumb_option', array(
-                'label'	      => esc_html__( 'Show breadcrumb trails', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show breadcrumb trails', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_breadcrumb_options_section',
                 'settings'    => 'site_breadcrumb_option'
             ))
@@ -1124,19 +1124,19 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         $wp_customize->add_control( 'site_breadcrumb_type', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_breadcrumb_options_section',
-            'label'     => esc_html__( 'Breadcrumb type', 'digital-newspaper' ),
-            'description' => esc_html__( 'If you use other than "default" one you will need to install and activate respective plugins Breadcrumb NavXT, Yoast SEO and Rank Math SEO', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Breadcrumb type', 'fairway-finders' ),
+            'description' => esc_html__( 'If you use other than "default" one you will need to install and activate respective plugins Breadcrumb NavXT, Yoast SEO and Rank Math SEO', 'fairway-finders' ),
             'choices'   => array(
-                'default' => __( 'Default', 'digital-newspaper' ),
-                'bcn'  => __( 'NavXT', 'digital-newspaper' ),
-                'yoast'  => __( 'Yoast SEO', 'digital-newspaper' ),
-                'rankmath'  => __( 'Rank Math', 'digital-newspaper' )
+                'default' => __( 'Default', 'fairway-finders' ),
+                'bcn'  => __( 'NavXT', 'fairway-finders' ),
+                'yoast'  => __( 'Yoast SEO', 'fairway-finders' ),
+                'rankmath'  => __( 'Rank Math', 'fairway-finders' )
             )
         ));
 
         // section- scroll to top options
         $wp_customize->add_section( 'digital_newspaper_stt_options_section', array(
-            'title' => esc_html__( 'Scroll To Top', 'digital-newspaper' ),
+            'title' => esc_html__( 'Scroll To Top', 'fairway-finders' ),
             'panel' => 'digital_newspaper_global_panel'
         ));
         
@@ -1148,7 +1148,7 @@ if( !function_exists( 'digital_newspaper_customizer_global_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Responsive_Multiselect_Tab_Control( $wp_customize, 'stt_responsive_option', array(
-                'label'	      => esc_html__( 'Scroll To Top Visibility', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Scroll To Top Visibility', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_stt_options_section',
                 'settings'    => 'stt_responsive_option'
             ))
@@ -1168,11 +1168,11 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
          * 
          */
         $wp_customize->add_panel( 'digital_newspaper_site_identity_panel', array(
-            'title' => esc_html__( 'Site Identity', 'digital-newspaper' ),
+            'title' => esc_html__( 'Site Identity', 'fairway-finders' ),
             'priority' => 5
         ));
         $wp_customize->get_section( 'title_tagline' )->panel = 'digital_newspaper_site_identity_panel'; // assing title tagline section to site identity panel
-        $wp_customize->get_section( 'title_tagline' )->title = esc_html__( 'Logo & Site Icon', 'digital-newspaper' ); // modify site logo label
+        $wp_customize->get_section( 'title_tagline' )->title = esc_html__( 'Logo & Site Icon', 'fairway-finders' ); // modify site logo label
 
         /**
          * Site Title Section
@@ -1180,13 +1180,13 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
          * panel - digital_newspaper_site_identity_panel
          */
         $wp_customize->add_section( 'digital_newspaper_site_title_section', array(
-            'title' => esc_html__( 'Site Title & Tagline', 'digital-newspaper' ),
+            'title' => esc_html__( 'Site Title & Tagline', 'fairway-finders' ),
             'panel' => 'digital_newspaper_site_identity_panel',
             'priority'  => 30,
         ));
         $wp_customize->get_control( 'blogname' )->section = 'digital_newspaper_site_title_section';
         $wp_customize->get_control( 'display_header_text' )->section = 'digital_newspaper_site_title_section';
-        $wp_customize->get_control( 'display_header_text' )->label = esc_html__( 'Display site title', 'digital-newspaper' );
+        $wp_customize->get_control( 'display_header_text' )->label = esc_html__( 'Display site title', 'fairway-finders' );
         $wp_customize->get_control( 'blogdescription' )->section = 'digital_newspaper_site_title_section';
         
         // site logo width
@@ -1197,7 +1197,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
         ));
         $wp_customize->add_control(
             new Digital_Newspaper_WP_Responsive_Range_Control( $wp_customize, 'digital_newspaper_site_logo_width', array(
-                    'label'	      => esc_html__( 'Logo Width (px)', 'digital-newspaper' ),
+                    'label'	      => esc_html__( 'Logo Width (px)', 'fairway-finders' ),
                     'section'     => 'title_tagline',
                     'settings'    => 'digital_newspaper_site_logo_width',
                     'unit'        => 'px',
@@ -1222,11 +1222,11 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -1239,7 +1239,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
             'transport' => 'postMessage'
         ));
         $wp_customize->add_control( 'blogdescription_option', array(
-            'label'    => esc_html__( 'Display site description', 'digital-newspaper' ),
+            'label'    => esc_html__( 'Display site description', 'fairway-finders' ),
             'section'  => 'digital_newspaper_site_title_section',
             'type'     => 'checkbox',
             'priority' => 50
@@ -1247,7 +1247,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
 
         $wp_customize->get_control( 'header_textcolor' )->section = 'digital_newspaper_site_title_section';
         $wp_customize->get_control( 'header_textcolor' )->priority = 60;
-        $wp_customize->get_control( 'header_textcolor' )->label = esc_html__( 'Site Title Color', 'digital-newspaper' );
+        $wp_customize->get_control( 'header_textcolor' )->label = esc_html__( 'Site Title Color', 'fairway-finders' );
 
         // header text hover color
         $wp_customize->add_setting( 'site_title_hover_textcolor', array(
@@ -1257,7 +1257,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Default_Color_Control( $wp_customize, 'site_title_hover_textcolor', array(
-                'label'      => esc_html__( 'Site Title Hover Color', 'digital-newspaper' ),
+                'label'      => esc_html__( 'Site Title Hover Color', 'fairway-finders' ),
                 'section'    => 'digital_newspaper_site_title_section',
                 'settings'   => 'site_title_hover_textcolor',
                 'priority'    => 70,
@@ -1273,7 +1273,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Default_Color_Control( $wp_customize, 'site_description_color', array(
-                'label'      => esc_html__( 'Site Description Color', 'digital-newspaper' ),
+                'label'      => esc_html__( 'Site Description Color', 'fairway-finders' ),
                 'section'    => 'digital_newspaper_site_title_section',
                 'settings'   => 'site_description_color',
                 'priority'    => 70,
@@ -1289,7 +1289,7 @@ if( !function_exists( 'digital_newspaper_customizer_site_identity_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'site_title_typo', array(
-                'label'	      => esc_html__( 'Site Title Typography', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Site Title Typography', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_site_title_section',
                 'settings'    => 'site_title_typo',
                 'tab'   => 'design',
@@ -1311,7 +1311,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
          * 
          */
         $wp_customize->add_section( 'digital_newspaper_top_header_section', array(
-            'title' => esc_html__( 'Top Header', 'digital-newspaper' ),
+            'title' => esc_html__( 'Top Header', 'fairway-finders' ),
             'priority'  => 68
         ));
         
@@ -1326,11 +1326,11 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -1345,8 +1345,8 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'top_header_option', array(
-                'label'	      => esc_html__( 'Show top header', 'digital-newspaper' ),
-                'description' => esc_html__( 'Toggle to enable or disable top header bar', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show top header', 'fairway-finders' ),
+                'description' => esc_html__( 'Toggle to enable or disable top header bar', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_option'
             ))
@@ -1360,7 +1360,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'top_header_date_time_option', array(
-                'label'	      => esc_html__( 'Show date and time', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show date and time', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_date_time_option',
             ))
@@ -1375,10 +1375,10 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
         $wp_customize->add_control( 'top_header_right_content_type', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_top_header_section',
-            'label'     => __( 'Ticker news / Nav menu choices', 'digital-newspaper' ),
+            'label'     => __( 'Ticker news / Nav menu choices', 'fairway-finders' ),
             'choices'   => array(
-                'ticker-news' => esc_html__( 'Ticker News', 'digital-newspaper' ),
-                'nav-menu' => esc_html__( 'Nav Menu', 'digital-newspaper' )
+                'ticker-news' => esc_html__( 'Ticker News', 'fairway-finders' ),
+                'nav-menu' => esc_html__( 'Nav Menu', 'fairway-finders' )
             )
         ));
 
@@ -1390,7 +1390,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'top_header_menu_option', array(
-                'label'	      => esc_html__( 'Show nav menu', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show nav menu', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_menu_option',
                 'active_callback'   => function( $setting ) {
@@ -1410,7 +1410,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'top_header_ticker_news_option', array(
-                'label'	      => esc_html__( 'Show ticker news', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show ticker news', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_ticker_news_option',
                 'active_callback'   => function( $setting ) {
@@ -1434,11 +1434,11 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
                 'choices' => array(
                     array(
                         'value' => 'category',
-                        'label' => esc_html__('By category', 'digital-newspaper' )
+                        'label' => esc_html__('By category', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'title',
-                        'label' => esc_html__('By title', 'digital-newspaper' )
+                        'label' => esc_html__('By title', 'fairway-finders' )
                     )
                 ),
                 'active_callback'   => function( $setting ) {
@@ -1457,7 +1457,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'top_header_ticker_news_categories', array(
-                'label'     => esc_html__( 'Posts Categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts Categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_top_header_section',
                 'settings'  => 'top_header_ticker_news_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -1477,7 +1477,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Posts_Multiselect_Control( $wp_customize, 'top_header_ticker_news_posts', array(
-                'label'     => esc_html__( 'Posts', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_top_header_section',
                 'settings'  => 'top_header_ticker_news_posts',
                 'choices'   => digital_newspaper_get_multicheckbox_posts_simple_array(),
@@ -1518,7 +1518,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'top_header_social_option', array(
-                'label'	      => esc_html__( 'Show social icons', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show social icons', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_social_option',
             ))
@@ -1537,7 +1537,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'digital_newspaper_social_icons_section',
-                        'label' => esc_html__( 'Manage social icons', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage social icons', 'fairway-finders' )
                     )
                 )
             ))
@@ -1551,7 +1551,7 @@ if( !function_exists( 'digital_newspaper_customizer_top_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Color_Group_Control( $wp_customize, 'top_header_background_color_group', array(
-                'label'	      => esc_html__( 'Background', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Background', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_top_header_section',
                 'settings'    => 'top_header_background_color_group',
                 'tab'   => 'design'
@@ -1572,13 +1572,13 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
          * 
          */
         $wp_customize->add_panel( 'digital_newspaper_header_panel', array(
-            'title' => esc_html__( 'Theme Header', 'digital-newspaper' ),
+            'title' => esc_html__( 'Theme Header', 'fairway-finders' ),
             'priority'  => 69
         ));
         
         // Header ads banner section
         $wp_customize->add_section( 'digital_newspaper_header_ads_banner_section', array(
-            'title' => esc_html__( 'Ads Banner', 'digital-newspaper' ),
+            'title' => esc_html__( 'Ads Banner', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 5
         ));
@@ -1590,7 +1590,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
 
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'digital_newspaper_header_ads_banner_header', array(
-                'label'	      => esc_html__( 'Ads Banner Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Ads Banner Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_ads_banner_section',
                 'settings'    => 'digital_newspaper_header_ads_banner_header'
             ))
@@ -1603,7 +1603,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Responsive_Multiselect_Tab_Control( $wp_customize, 'header_ads_banner_responsive_option', array(
-                'label'	      => esc_html__( 'Ads Banner Visibility', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Ads Banner Visibility', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_ads_banner_section',
                 'settings'    => 'header_ads_banner_responsive_option'
             ))
@@ -1617,8 +1617,8 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'header_ads_banner_custom_image', array(
             'section' => 'digital_newspaper_header_ads_banner_section',
             'mime_type' => 'image',
-            'label' => esc_html__( 'Ads Image', 'digital-newspaper' ),
-            'description' => esc_html__( 'Recommended size for ad image is 900 (width) * 350 (height)', 'digital-newspaper' )
+            'label' => esc_html__( 'Ads Image', 'fairway-finders' ),
+            'description' => esc_html__( 'Recommended size for ad image is 900 (width) * 350 (height)', 'fairway-finders' )
         )));
 
         // ads url field
@@ -1630,7 +1630,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         $wp_customize->add_control( 'header_ads_banner_custom_url', array(
             'type'  => 'url',
             'section'   => 'digital_newspaper_header_ads_banner_section',
-            'label'     => esc_html__( 'Ads url', 'digital-newspaper' )
+            'label'     => esc_html__( 'Ads url', 'fairway-finders' )
         ));
 
         // ads link show on
@@ -1642,16 +1642,16 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         $wp_customize->add_control( 'header_ads_banner_custom_target', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_header_ads_banner_section',
-            'label'     => __( 'Open Ads link on', 'digital-newspaper' ),
+            'label'     => __( 'Open Ads link on', 'fairway-finders' ),
             'choices'   => array(
-                '_self' => esc_html__( 'Open in same tab', 'digital-newspaper' ),
-                '_blank' => esc_html__( 'Open in new tab', 'digital-newspaper' )
+                '_self' => esc_html__( 'Open in same tab', 'fairway-finders' ),
+                '_blank' => esc_html__( 'Open in new tab', 'fairway-finders' )
             )
         ));
 
         // Header content section
         $wp_customize->add_section( 'digital_newspaper_main_header_section', array(
-            'title' => esc_html__( 'Main Header', 'digital-newspaper' ),
+            'title' => esc_html__( 'Main Header', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 10
         ));
@@ -1668,11 +1668,11 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -1686,10 +1686,10 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         $wp_customize->add_control( 'header_width_layout', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_header_section',
-            'label'     => __( 'Width Layout', 'digital-newspaper' ),
+            'label'     => __( 'Width Layout', 'fairway-finders' ),
             'choices'   => array(
-                'contain' => esc_html__( 'Container', 'digital-newspaper' ),
-                'full-width' => esc_html__( 'Full Width', 'digital-newspaper' )
+                'contain' => esc_html__( 'Container', 'fairway-finders' ),
+                'full-width' => esc_html__( 'Full Width', 'fairway-finders' )
             )
         ));
 
@@ -1706,7 +1706,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'title_tagline',
-                        'label' => esc_html__( 'Manage Site Logo', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage Site Logo', 'fairway-finders' )
                     )
                 )
             ))
@@ -1725,7 +1725,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'digital_newspaper_site_title_section',
-                        'label' => esc_html__( 'Manage site & Tagline', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage site & Tagline', 'fairway-finders' )
                     )
                 )
             ))
@@ -1740,7 +1740,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_sidebar_toggle_option', array(
-                'label'	      => esc_html__( 'Show sidebar toggle button', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show sidebar toggle button', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_header_section',
                 'settings'    => 'header_sidebar_toggle_option'
             ))
@@ -1759,7 +1759,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-header-toggle-sidebar',
-                        'label' => esc_html__( 'Manage sidebar from here', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage sidebar from here', 'fairway-finders' )
                     )
                 )
             ))
@@ -1774,7 +1774,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_search_option', array(
-                'label'	      => esc_html__( 'Show search icon', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show search icon', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_header_section',
                 'settings'    => 'header_search_option'
             ))
@@ -1792,7 +1792,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'digital_newspaper_header_live_search_section',
-                        'label' => esc_html__( 'Manage live search', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage live search', 'fairway-finders' )
                     )
                 )
             ))
@@ -1806,7 +1806,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_theme_mode_toggle_option', array(
-                'label'	      => esc_html__( 'Show dark/light toggle icon', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show dark/light toggle icon', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_header_section',
                 'settings'    => 'header_theme_mode_toggle_option'
             ))
@@ -1819,7 +1819,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'theme_header_sticky', array(
-                'label'	      => esc_html__( 'Enable header section sticky ( on scroll up )', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable header section sticky ( on scroll up )', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_header_section',
                 'settings'    => 'theme_header_sticky'
             ))
@@ -1833,7 +1833,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control(
             new Digital_Newspaper_WP_Responsive_Range_Control( $wp_customize, 'header_vertical_padding', array(
-                    'label'	      => esc_html__( 'Vertical Padding (px)', 'digital-newspaper' ),
+                    'label'	      => esc_html__( 'Vertical Padding (px)', 'fairway-finders' ),
                     'section'     => 'digital_newspaper_main_header_section',
                     'settings'    => 'header_vertical_padding',
                     'unit'        => 'px',
@@ -1856,7 +1856,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Color_Image_Group_Control( $wp_customize, 'header_background_color_group', array(
-                'label'	      => esc_html__( 'Background', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Background', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_header_section',
                 'settings'    => 'header_background_color_group',
                 'tab'   => 'design'
@@ -1865,7 +1865,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
 
         // Header newsletter section
         $wp_customize->add_section( 'digital_newspaper_header_newsletter_section', array(
-            'title' => esc_html__( 'Newsletter / Subscribe Button', 'digital-newspaper' ),
+            'title' => esc_html__( 'Newsletter / Subscribe Button', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 15
         ));
@@ -1876,7 +1876,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'digital_newspaper_header_newsletter_header', array(
-                'label'	      => esc_html__( 'Newsletter/Subscribe Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Newsletter/Subscribe Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_newsletter_section',
                 'settings'    => 'digital_newspaper_header_newsletter_header'
             ))
@@ -1889,7 +1889,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_newsletter_option', array(
-                'label'	      => esc_html__( 'Show newsletter button', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show newsletter button', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_newsletter_section',
                 'settings'    => 'header_newsletter_option'
             ))
@@ -1901,15 +1901,15 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
             'sanitize_callback' => 'digital_newspaper_sanitize_url',
         ));
         $wp_customize->add_control( 'header_newsletter_redirect_href_link', array(
-            'label' => esc_html__( 'Redirect URL.', 'digital-newspaper' ),
-            'description'   => esc_html__( 'Add url for the button to redirect.', 'digital-newspaper' ),
+            'label' => esc_html__( 'Redirect URL.', 'fairway-finders' ),
+            'description'   => esc_html__( 'Add url for the button to redirect.', 'fairway-finders' ),
             'section'   => 'digital_newspaper_header_newsletter_section',
             'type'  => 'url'
         ));
 
         // Header random news section
         $wp_customize->add_section( 'digital_newspaper_header_random_news_section', array(
-            'title' => esc_html__( 'Random News', 'digital-newspaper' ),
+            'title' => esc_html__( 'Random News', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 15
         ));
@@ -1920,7 +1920,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'digital_newspaper_header_random_news_header', array(
-                'label'	      => esc_html__( 'Random News Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Random News Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_random_news_section',
                 'settings'    => 'digital_newspaper_header_random_news_header'
             ))
@@ -1933,7 +1933,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_random_news_option', array(
-                'label'	      => esc_html__( 'Show random news button', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show random news button', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_random_news_section',
                 'settings'    => 'header_random_news_option'
             ))
@@ -1946,7 +1946,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'header_random_news_link_to_single_news_option', array(
-                'label'	      => esc_html__( 'Redirect button to single random news', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Redirect button to single random news', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_random_news_section',
                 'settings'    => 'header_random_news_link_to_single_news_option'
             ))
@@ -1959,7 +1959,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Radio_Bubble_Control( $wp_customize, 'header_random_news_filter', array(
-                'label'	      => esc_html__( 'Type of posts to dislay', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Type of posts to dislay', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_random_news_section',
                 'settings'    => 'header_random_news_filter',
                 'choices' => digital_newspaper_get_random_news_filter_choices_array(),
@@ -1978,7 +1978,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
          * panel - digital_newspaper_header_options_panel
          */
         $wp_customize->add_section( 'digital_newspaper_header_menu_option_section', array(
-            'title' => esc_html__( 'Menu Options', 'digital-newspaper' ),
+            'title' => esc_html__( 'Menu Options', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 30,
         ));
@@ -1994,11 +1994,11 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'typo',
-                        'title'  => esc_html__( 'Typography', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Typography', 'fairway-finders' )
                     )
                 )
             ))
@@ -2012,18 +2012,18 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Radio_Tab_Control( $wp_customize, 'header_menu_hover_effect', array(
-                'label'	      => esc_html__( 'Hover Effect', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Hover Effect', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_menu_option_section',
                 'settings'    => 'header_menu_hover_effect',
                 'tab'   => 'design',
                 'choices' => array(
                     array(
                         'value' => 'none',
-                        'label' => esc_html__('None', 'digital-newspaper' )
+                        'label' => esc_html__('None', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'one',
-                        'label' => esc_html__('One', 'digital-newspaper' )
+                        'label' => esc_html__('One', 'fairway-finders' )
                     )
                 )
             ))
@@ -2037,7 +2037,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'header_menu_typo', array(
-                'label'	      => esc_html__( 'Main Menu', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Main Menu', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_menu_option_section',
                 'settings'    => 'header_menu_typo',
                 'tab'   => 'typo',
@@ -2053,7 +2053,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'header_sub_menu_typo', array(
-                'label'	      => esc_html__( 'Sub Menu', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Sub Menu', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_menu_option_section',
                 'settings'    => 'header_sub_menu_typo',
                 'tab'   => 'typo',
@@ -2067,7 +2067,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
          * panel - digital_newspaper_header_options_panel
          */
         $wp_customize->add_section( 'digital_newspaper_header_live_search_section', array(
-            'title' => esc_html__( 'Live Search', 'digital-newspaper' ),
+            'title' => esc_html__( 'Live Search', 'fairway-finders' ),
             'panel' => 'digital_newspaper_header_panel',
             'priority'  => 50
         ));
@@ -2079,7 +2079,7 @@ if( !function_exists( 'digital_newspaper_customizer_header_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'theme_header_live_search_option', array(
-                'label'	      => esc_html__( 'Enable live search', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable live search', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_header_live_search_section'
             ))
         );
@@ -2092,7 +2092,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
     function digital_newspaper_customizer_ticker_news_panel( $wp_customize ) {
         // Header ads banner section
         $wp_customize->add_section( 'digital_newspaper_ticker_news_section', array(
-            'title' => esc_html__( 'Ticker News', 'digital-newspaper' ),
+            'title' => esc_html__( 'Ticker News', 'fairway-finders' ),
             'priority'  => 70
         ));
 
@@ -2102,7 +2102,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'ticker_news_width_layouts_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_ticker_news_section',
                 'settings'    => 'ticker_news_width_layouts_header'
             ))
@@ -2121,15 +2121,15 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
                 'section'  => 'digital_newspaper_ticker_news_section',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -2145,10 +2145,10 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         $wp_customize->add_control( 'ticker_news_visible', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_ticker_news_section',
-            'label'     => esc_html__( 'Show ticker on', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Show ticker on', 'fairway-finders' ),
             'choices'   => array(
-                'front-page' => esc_html__( 'Frontpage', 'digital-newspaper' ),
-                'none' => esc_html__( 'Hide', 'digital-newspaper' ),
+                'front-page' => esc_html__( 'Frontpage', 'fairway-finders' ),
+                'none' => esc_html__( 'Hide', 'fairway-finders' ),
             ),
         ));
 
@@ -2159,7 +2159,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'ticker_news_content_header', array(
-                'label'	      => esc_html__( 'Content Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Content Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_ticker_news_section',
                 'settings'    => 'ticker_news_content_header',
                 'type'        => 'section-heading',
@@ -2174,7 +2174,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Icon_Text_Control( $wp_customize, 'ticker_news_title', array(
-                'label'     => esc_html__( 'Ticker title', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Ticker title', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_ticker_news_section',
                 'settings'    => 'ticker_news_title',
                 'icons' => array( "fas fa-ban", "fas fa-bolt", "fas fa-rss", "fas fa-newspaper", "far fa-newspaper", "fas fa-rss-square", "fas fa-fire", "fas fa-wifi", "fab fa-gripfire", "fab fa-free-code-camp", "fas fa-globe-americas", "fas fa-circle", "far fa-circle", "fas fa-circle-notch", "fas fa-dot-circle" )
@@ -2190,13 +2190,13 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         $wp_customize->add_control( 'ticker_news_order_by', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_ticker_news_section',
-            'label'     => esc_html__( 'Orderby', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Orderby', 'fairway-finders' ),
             'choices'   => array(
-                'date-desc' => esc_html__( 'Newest - Oldest', 'digital-newspaper' ),
-                'date-asc' => esc_html__( 'Oldest - Newest', 'digital-newspaper' ),
-                'title-asc' => esc_html__( 'A - Z', 'digital-newspaper' ),
-                'title-desc' => esc_html__( 'Z - A', 'digital-newspaper' ),
-                'rand-desc' => esc_html__( 'Random', 'digital-newspaper' )
+                'date-desc' => esc_html__( 'Newest - Oldest', 'fairway-finders' ),
+                'date-asc' => esc_html__( 'Oldest - Newest', 'fairway-finders' ),
+                'title-asc' => esc_html__( 'A - Z', 'fairway-finders' ),
+                'title-desc' => esc_html__( 'Z - A', 'fairway-finders' ),
+                'rand-desc' => esc_html__( 'Random', 'fairway-finders' )
             ),
         ));
 
@@ -2212,11 +2212,11 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
                 'choices' => array(
                     array(
                         'value' => 'category',
-                        'label' => esc_html__('By category', 'digital-newspaper' )
+                        'label' => esc_html__('By category', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'title',
-                        'label' => esc_html__('By title', 'digital-newspaper' )
+                        'label' => esc_html__('By title', 'fairway-finders' )
                     )
                 )
             ))
@@ -2229,7 +2229,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'ticker_news_categories', array(
-                'label'     => esc_html__( 'Posts Categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts Categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_ticker_news_section',
                 'settings'  => 'ticker_news_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -2249,7 +2249,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Posts_Multiselect_Control( $wp_customize, 'ticker_news_posts', array(
-                'label'     => esc_html__( 'Posts', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_ticker_news_section',
                 'settings'  => 'ticker_news_posts',
                 'choices'   => digital_newspaper_get_multicheckbox_posts_simple_array(),
@@ -2289,7 +2289,7 @@ if( !function_exists( 'digital_newspaper_customizer_ticker_news_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Range_Control( $wp_customize, 'ticker_news_numbers', array(
-                'label'	      => esc_html__( 'Number of posts to display', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Number of posts to display', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_ticker_news_section',
                 'settings'    => 'ticker_news_numbers',
                 'input_attrs' => array(
@@ -2321,7 +2321,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
          * 
          */
         $wp_customize->add_section( 'digital_newspaper_main_banner_section', array(
-            'title' => esc_html__( 'Main Banner', 'digital-newspaper' ),
+            'title' => esc_html__( 'Main Banner', 'fairway-finders' ),
             'priority'  => 70
         ));
 
@@ -2337,11 +2337,11 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -2355,7 +2355,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'main_banner_option', array(
-                'label'	      => esc_html__( 'Show main banner', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show main banner', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_option'
             ))
@@ -2374,11 +2374,11 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'priority' => 10,
                 'choices'  => array(
                     'five' => array(
-                        'label' => esc_html__( 'Layout Five', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout Five', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/main_banner_five.jpg'
                     ),
                     'six' => array(
-                        'label' => esc_html__( 'Layout six', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout six', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/main_banner_six.jpg'
                     )
                 )
@@ -2392,7 +2392,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'main_banner_list_posts_settings_header', array(
-                'label'	      => esc_html__( 'List Posts Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'List Posts Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_list_posts_settings_header',
                 'active_callback'   => function( $setting ) {
@@ -2414,7 +2414,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_list_posts_title', array(
             'type'      => 'text',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Popular posts title', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Popular posts title', 'fairway-finders' ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'five' ) {
                     return true;
@@ -2431,7 +2431,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'main_banner_list_posts_categories', array(
-                'label'     => esc_html__( 'Popular posts categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Popular posts categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_list_posts_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -2452,13 +2452,13 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_list_posts_order_by', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Orderby', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Orderby', 'fairway-finders' ),
             'choices'   => array(
-                'date-desc' => esc_html__( 'Newest - Oldest', 'digital-newspaper' ),
-                'date-asc' => esc_html__( 'Oldest - Newest', 'digital-newspaper' ),
-                'title-asc' => esc_html__( 'A - Z', 'digital-newspaper' ),
-                'title-desc' => esc_html__( 'Z - A', 'digital-newspaper' ),
-                'rand-desc' => esc_html__( 'Random', 'digital-newspaper' )
+                'date-desc' => esc_html__( 'Newest - Oldest', 'fairway-finders' ),
+                'date-asc' => esc_html__( 'Oldest - Newest', 'fairway-finders' ),
+                'title-asc' => esc_html__( 'A - Z', 'fairway-finders' ),
+                'title-desc' => esc_html__( 'Z - A', 'fairway-finders' ),
+                'rand-desc' => esc_html__( 'Random', 'fairway-finders' )
             ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'five' ) {
@@ -2476,7 +2476,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'main_banner_slider_settings_header', array(
-                'label'	      => esc_html__( 'Slider Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Slider Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_slider_settings_header',
                 'type'        => 'section-heading',
@@ -2491,13 +2491,13 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_slider_order_by', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Orderby', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Orderby', 'fairway-finders' ),
             'choices'   => array(
-                'date-desc' => esc_html__( 'Newest - Oldest', 'digital-newspaper' ),
-                'date-asc' => esc_html__( 'Oldest - Newest', 'digital-newspaper' ),
-                'title-asc' => esc_html__( 'A - Z', 'digital-newspaper' ),
-                'title-desc' => esc_html__( 'Z - A', 'digital-newspaper' ),
-                'rand-desc' => esc_html__( 'Random', 'digital-newspaper' )
+                'date-desc' => esc_html__( 'Newest - Oldest', 'fairway-finders' ),
+                'date-asc' => esc_html__( 'Oldest - Newest', 'fairway-finders' ),
+                'title-asc' => esc_html__( 'A - Z', 'fairway-finders' ),
+                'title-desc' => esc_html__( 'Z - A', 'fairway-finders' ),
+                'rand-desc' => esc_html__( 'Random', 'fairway-finders' )
             ),
         ));
 
@@ -2508,7 +2508,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Range_Control( $wp_customize, 'main_banner_slider_numbers', array(
-                'label'	      => esc_html__( 'Number of posts to display', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Number of posts to display', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_slider_numbers',
                 'input_attrs' => array(
@@ -2538,11 +2538,11 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'choices' => array(
                     array(
                         'value' => 'category',
-                        'label' => esc_html__('By category', 'digital-newspaper' )
+                        'label' => esc_html__('By category', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'title',
-                        'label' => esc_html__('By title', 'digital-newspaper' )
+                        'label' => esc_html__('By title', 'fairway-finders' )
                     )
                 )
             ))
@@ -2556,7 +2556,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'main_banner_slider_categories', array(
-                'label'     => esc_html__( 'Posts Categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts Categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_slider_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -2595,7 +2595,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Posts_Multiselect_Control( $wp_customize, 'main_banner_posts', array(
-                'label'     => esc_html__( 'Posts', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_posts',
                 'choices'   => digital_newspaper_get_multicheckbox_posts_simple_array(),
@@ -2615,7 +2615,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'main_banner_related_posts_option', array(
-                'label'	      => esc_html__( 'Show related posts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show related posts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_related_posts_option'
             ))
@@ -2627,7 +2627,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'main_banner_six_trailing_posts_settings_header', array(
-                'label'	      => esc_html__( 'Trailing Posts Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Trailing Posts Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_six_trailing_posts_settings_header',
                 'active_callback'   => function( $setting ) {
@@ -2652,11 +2652,11 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'priority' => 10,
                 'choices'  => array(
                     'row' => array(
-                        'label' => esc_html__( 'Row Layout', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Row Layout', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/main_banner_six_trailing_posts_layout_row.jpg'
                     ),
                     'column' => array(
-                        'label' => esc_html__( 'Column Layout', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Column Layout', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/main_banner_six_trailing_posts_layout_column.jpg'
                     )
                 ),
@@ -2677,13 +2677,13 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_six_trailing_posts_order_by', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Orderby', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Orderby', 'fairway-finders' ),
             'choices'   => array(
-                'date-desc' => esc_html__( 'Newest - Oldest', 'digital-newspaper' ),
-                'date-asc' => esc_html__( 'Oldest - Newest', 'digital-newspaper' ),
-                'title-asc' => esc_html__( 'A - Z', 'digital-newspaper' ),
-                'title-desc' => esc_html__( 'Z - A', 'digital-newspaper' ),
-                'rand-desc' => esc_html__( 'Random', 'digital-newspaper' )
+                'date-desc' => esc_html__( 'Newest - Oldest', 'fairway-finders' ),
+                'date-asc' => esc_html__( 'Oldest - Newest', 'fairway-finders' ),
+                'title-asc' => esc_html__( 'A - Z', 'fairway-finders' ),
+                'title-desc' => esc_html__( 'Z - A', 'fairway-finders' ),
+                'rand-desc' => esc_html__( 'Random', 'fairway-finders' )
             ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'six' ) {
@@ -2705,11 +2705,11 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'choices' => array(
                     array(
                         'value' => 'category',
-                        'label' => esc_html__('By category', 'digital-newspaper' )
+                        'label' => esc_html__('By category', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'title',
-                        'label' => esc_html__('By title', 'digital-newspaper' )
+                        'label' => esc_html__('By title', 'fairway-finders' )
                     )
                 )
             ))
@@ -2723,7 +2723,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'main_banner_six_trailing_posts_categories', array(
-                'label'     => esc_html__( 'Trailing posts categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Trailing posts categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_six_trailing_posts_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -2743,7 +2743,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Posts_Multiselect_Control( $wp_customize, 'main_banner_six_trailing_posts', array(
-                'label'     => esc_html__( 'Posts', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Posts', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_six_trailing_posts',
                 'choices'   => digital_newspaper_get_multicheckbox_posts_simple_array(),
@@ -2763,7 +2763,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'main_banner_grid_posts_settings_header', array(
-                'label'	      => esc_html__( 'Grid Posts Setting', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Grid Posts Setting', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_grid_posts_settings_header',
                 'active_callback'   => function( $setting ) {
@@ -2785,7 +2785,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_grid_posts_title', array(
             'type'      => 'text',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Popular posts title', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Popular posts title', 'fairway-finders' ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'five' ) {
                     return true;
@@ -2802,7 +2802,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Multiselect_Control( $wp_customize, 'main_banner_grid_posts_categories', array(
-                'label'     => esc_html__( 'Popular posts categories', 'digital-newspaper' ),
+                'label'     => esc_html__( 'Popular posts categories', 'fairway-finders' ),
                 'section'   => 'digital_newspaper_main_banner_section',
                 'settings'  => 'main_banner_grid_posts_categories',
                 'choices'   => digital_newspaper_get_multicheckbox_categories_simple_array(),
@@ -2823,13 +2823,13 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_grid_posts_order_by', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Orderby', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Orderby', 'fairway-finders' ),
             'choices'   => array(
-                'date-desc' => esc_html__( 'Newest - Oldest', 'digital-newspaper' ),
-                'date-asc' => esc_html__( 'Oldest - Newest', 'digital-newspaper' ),
-                'title-asc' => esc_html__( 'A - Z', 'digital-newspaper' ),
-                'title-desc' => esc_html__( 'Z - A', 'digital-newspaper' ),
-                'rand-desc' => esc_html__( 'Random', 'digital-newspaper' )
+                'date-desc' => esc_html__( 'Newest - Oldest', 'fairway-finders' ),
+                'date-asc' => esc_html__( 'Oldest - Newest', 'fairway-finders' ),
+                'title-asc' => esc_html__( 'A - Z', 'fairway-finders' ),
+                'title-desc' => esc_html__( 'Z - A', 'fairway-finders' ),
+                'rand-desc' => esc_html__( 'Random', 'fairway-finders' )
             ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'five' ) {
@@ -2847,10 +2847,10 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         $wp_customize->add_control( 'main_banner_grid_posts_direction', array(
             'type'      => 'select',
             'section'   => 'digital_newspaper_main_banner_section',
-            'label'     => esc_html__( 'Slide direction', 'digital-newspaper' ),
+            'label'     => esc_html__( 'Slide direction', 'fairway-finders' ),
             'choices'   => array(
-                'true' => esc_html__( 'Vertical', 'digital-newspaper' ),
-                'false' => esc_html__( 'Horizontal', 'digital-newspaper' )
+                'true' => esc_html__( 'Vertical', 'fairway-finders' ),
+                'false' => esc_html__( 'Horizontal', 'fairway-finders' )
             ),
             'active_callback'   => function( $setting ) {
                 if ( $setting->manager->get_setting( 'main_banner_layout' )->value() === 'five' ) {
@@ -2866,7 +2866,7 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'main_banner_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_main_banner_section',
                 'settings'    => 'main_banner_width_layout_header',
                 'tab'   => 'design'
@@ -2887,15 +2887,15 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -2909,19 +2909,19 @@ if( !function_exists( 'digital_newspaper_customizer_main_banner_panel' ) ) :
         ));
         $wp_customize->add_control(
             new Digital_Newspaper_WP_Item_Sortable_Control( $wp_customize, 'banner_section_three_column_order', array(
-                'label'         => esc_html__( 'Layout Five Column Re-order', 'digital-newspaper' ),
+                'label'         => esc_html__( 'Layout Five Column Re-order', 'fairway-finders' ),
                 'section'       => 'digital_newspaper_main_banner_section',
                 'settings'      => 'banner_section_three_column_order',
                 'tab'   => 'design',
                 'fields'    => array(
                     'list_posts'  => array(
-                        'label' => esc_html__( 'List Posts Column', 'digital-newspaper' )
+                        'label' => esc_html__( 'List Posts Column', 'fairway-finders' )
                     ),
                     'banner_slider'  => array(
-                        'label' => esc_html__( 'Banner Slider Column', 'digital-newspaper' )
+                        'label' => esc_html__( 'Banner Slider Column', 'fairway-finders' )
                     ),
                     'grid_slider'  => array(
-                        'label' => esc_html__( 'Grid Posts Slider Column', 'digital-newspaper' )
+                        'label' => esc_html__( 'Grid Posts Slider Column', 'fairway-finders' )
                     )
                 )
             ))
@@ -2942,7 +2942,7 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
          * panel - digital_newspaper_footer_panel
          */
         $wp_customize->add_section( 'digital_newspaper_footer_section', array(
-            'title' => esc_html__( 'Theme Footer', 'digital-newspaper' ),
+            'title' => esc_html__( 'Theme Footer', 'fairway-finders' ),
             'priority'  => 74
         ));
 
@@ -2955,7 +2955,7 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'footer_option', array(
-                'label'	      => esc_html__( 'Enable footer section', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable footer section', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_footer_section',
                 'settings'    => 'footer_option',
                 'tab'   => 'general'
@@ -2977,19 +2977,19 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
                 'tab'   => 'general',
                 'choices'  => array(
                     'column-one' => array(
-                        'label' => esc_html__( 'Column One', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Column One', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/footer_column_one.jpg'
                     ),
                     'column-two' => array(
-                        'label' => esc_html__( 'Column Two', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Column Two', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/footer_column_two.jpg'
                     ),
                     'column-three' => array(
-                        'label' => esc_html__( 'Column Three', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Column Three', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/footer_column_three.jpg'
                     ),
                     'column-four' => array(
-                        'label' => esc_html__( 'Column Four', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Column Four', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/footer_column_four.jpg'
                     )
                 )
@@ -3003,17 +3003,17 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Radio_Tab_Control( $wp_customize, 'footer_section_width', array(
-                'label'	      => esc_html__( 'Section Width', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Section Width', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_footer_section',
                 'settings'    => 'footer_section_width',
                 'choices' => array(
                     array(
                         'value' => 'full-width',
-                        'label' => esc_html__('Full Width', 'digital-newspaper' )
+                        'label' => esc_html__('Full Width', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'boxed-width',
-                        'label' => esc_html__('Boxed Width', 'digital-newspaper' )
+                        'label' => esc_html__('Boxed Width', 'fairway-finders' )
                     )
                 )
             ))
@@ -3025,7 +3025,7 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Redirect_Control( $wp_customize, 'footer_widgets_redirects', array(
-                'label'	      => esc_html__( 'Widgets', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Widgets', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_footer_section',
                 'settings'    => 'footer_widgets_redirects',
                 'tab'   => 'general',
@@ -3033,22 +3033,22 @@ if( !function_exists( 'digital_newspaper_customizer_footer_panel' ) ) :
                     'footer-column-one' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-footer-sidebar--column-1',
-                        'label' => esc_html__( 'Manage footer widget one', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage footer widget one', 'fairway-finders' )
                     ),
                     'footer-column-two' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-footer-sidebar--column-2',
-                        'label' => esc_html__( 'Manage footer widget two', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage footer widget two', 'fairway-finders' )
                     ),
                     'footer-column-three' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-footer-sidebar--column-3',
-                        'label' => esc_html__( 'Manage footer widget three', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage footer widget three', 'fairway-finders' )
                     ),
                     'footer-column-four' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-footer-sidebar--column-4',
-                        'label' => esc_html__( 'Manage footer widget four', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage footer widget four', 'fairway-finders' )
                     )
                 )
             ))
@@ -3069,7 +3069,7 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
          * panel - digital_newspaper_footer_panel
          */
         $wp_customize->add_section( 'digital_newspaper_bottom_footer_section', array(
-            'title' => esc_html__( 'Bottom Footer', 'digital-newspaper' ),
+            'title' => esc_html__( 'Bottom Footer', 'fairway-finders' ),
             'priority'  => 75
         ));
 
@@ -3084,11 +3084,11 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3103,7 +3103,7 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Toggle_Control( $wp_customize, 'bottom_footer_option', array(
-                'label'	      => esc_html__( 'Enable bottom footer', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Enable bottom footer', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_footer_section',
                 'settings'    => 'bottom_footer_option'
             ))
@@ -3117,7 +3117,7 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'bottom_footer_social_option', array(
-                'label'	      => esc_html__( 'Show bottom social icons', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show bottom social icons', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_footer_section',
                 'settings'    => 'bottom_footer_social_option'
             ))
@@ -3131,7 +3131,7 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'bottom_footer_menu_option', array(
-                'label'	      => esc_html__( 'Show bottom footer menu', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show bottom footer menu', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_footer_section',
                 'settings'    => 'bottom_footer_menu_option'
             ))
@@ -3143,9 +3143,9 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
             'sanitize_callback' => 'wp_kses_post'
         ));
         $wp_customize->add_control( 'bottom_footer_site_info', array(
-                'label'	      => esc_html__( 'Copyright Text', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Copyright Text', 'fairway-finders' ),
                 'type'  => 'textarea',
-                'description' => esc_html__( 'Add %year% to retrieve current year.', 'digital-newspaper' ),
+                'description' => esc_html__( 'Add %year% to retrieve current year.', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_footer_section'
             )
         );
@@ -3156,7 +3156,7 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'bottom_footer_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_footer_section',
                 'settings'    => 'bottom_footer_width_layout_header',
                 'tab'   => 'design'
@@ -3177,15 +3177,15 @@ if( !function_exists( 'digital_newspaper_customizer_bottom_footer_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3203,7 +3203,7 @@ if( !function_exists( 'digital_newspaper_customizer_typography_panel' ) ) :
     function digital_newspaper_customizer_typography_panel( $wp_customize ) {
         // typography options panel settings
         $wp_customize->add_section( 'digital_newspaper_typography_section', array(
-            'title' => esc_html__( 'Typography', 'digital-newspaper' ),
+            'title' => esc_html__( 'Typography', 'fairway-finders' ),
             'priority'  => 55
         ));
 
@@ -3215,7 +3215,7 @@ if( !function_exists( 'digital_newspaper_customizer_typography_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'site_section_block_title_typo', array(
-                'label'	      => esc_html__( 'Block Title', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Block Title', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_typography_section',
                 'settings'    => 'site_section_block_title_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration')
@@ -3230,7 +3230,7 @@ if( !function_exists( 'digital_newspaper_customizer_typography_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'site_archive_post_title_typo', array(
-                'label'	      => esc_html__( 'Post Title', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Title', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_typography_section',
                 'settings'    => 'site_archive_post_title_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration')
@@ -3245,7 +3245,7 @@ if( !function_exists( 'digital_newspaper_customizer_typography_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'site_archive_post_meta_typo', array(
-                'label'	      => esc_html__( 'Post Meta', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Meta', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_typography_section',
                 'settings'    => 'site_archive_post_meta_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration')
@@ -3260,7 +3260,7 @@ if( !function_exists( 'digital_newspaper_customizer_typography_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'site_archive_post_content_typo', array(
-                'label'	      => esc_html__( 'Post Content', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Content', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_typography_section',
                 'settings'    => 'site_archive_post_content_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration')
@@ -3278,13 +3278,13 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
     function digital_newspaper_customizer_front_sections_panel( $wp_customize ) {
         // Front sections panel
         $wp_customize->add_panel( 'digital_newspaper_front_sections_panel', array(
-            'title' => esc_html__( 'Front sections', 'digital-newspaper' ),
+            'title' => esc_html__( 'Front sections', 'fairway-finders' ),
             'priority'  => 71
         ));
 
         // full width content section
         $wp_customize->add_section( 'digital_newspaper_full_width_section', array(
-            'title' => esc_html__( 'Full Width', 'digital-newspaper' ),
+            'title' => esc_html__( 'Full Width', 'fairway-finders' ),
             'panel' => 'digital_newspaper_front_sections_panel',
             'priority'  => 10
         ));
@@ -3300,11 +3300,11 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3318,8 +3318,8 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Block_Repeater_Control( $wp_customize, 'full_width_blocks', array(
-                'label'	      => esc_html__( 'Blocks to show in this section', 'digital-newspaper' ),
-                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Blocks to show in this section', 'fairway-finders' ),
+                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_full_width_section',
                 'settings'    => 'full_width_blocks'
             ))
@@ -3331,7 +3331,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'full_width_blocks_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_full_width_section',
                 'settings'    => 'full_width_blocks_width_layout_header',
                 'tab'   => 'design'
@@ -3352,15 +3352,15 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3369,7 +3369,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
 
         // Left content -right sidebar section
         $wp_customize->add_section( 'digital_newspaper_leftc_rights_section', array(
-            'title' => esc_html__( 'Left Content  - Right Sidebar', 'digital-newspaper' ),
+            'title' => esc_html__( 'Left Content  - Right Sidebar', 'fairway-finders' ),
             'panel' => 'digital_newspaper_front_sections_panel',
             'priority'  => 10
         ));
@@ -3385,11 +3385,11 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3402,7 +3402,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
     
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Redirect_Control( $wp_customize, 'leftc_rights_section_sidebar_redirect', array(
-                'label'	      => esc_html__( 'Widgets', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Widgets', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_leftc_rights_section',
                 'settings'    => 'leftc_rights_section_sidebar_redirect',
                 'tab'   => 'general',
@@ -3410,7 +3410,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                     'footer-column-one' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-front-right-sidebar',
-                        'label' => esc_html__( 'Manage right sidebar', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage right sidebar', 'fairway-finders' )
                     )
                 )
             ))
@@ -3424,8 +3424,8 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Block_Repeater_Control( $wp_customize, 'leftc_rights_blocks', array(
-                'label'	      => esc_html__( 'Blocks to show in this section', 'digital-newspaper' ),
-                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Blocks to show in this section', 'fairway-finders' ),
+                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_leftc_rights_section',
                 'settings'    => 'leftc_rights_blocks'
             ))
@@ -3437,7 +3437,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'leftc_rights_blocks_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_leftc_rights_section',
                 'settings'    => 'leftc_rights_blocks_width_layout_header',
                 'tab'   => 'design'
@@ -3458,15 +3458,15 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3475,7 +3475,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         // Left sidebar - Right content section
         $wp_customize->add_section( 'digital_newspaper_lefts_rightc_section', array(
-            'title' => esc_html__( 'Left Sidebar - Right Content', 'digital-newspaper' ),
+            'title' => esc_html__( 'Left Sidebar - Right Content', 'fairway-finders' ),
             'panel' => 'digital_newspaper_front_sections_panel',
             'priority'  => 10
         ));
@@ -3491,11 +3491,11 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3507,7 +3507,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Redirect_Control( $wp_customize, 'lefts_rightc_section_sidebar_redirect', array(
-                'label'	      => esc_html__( 'Widgets', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Widgets', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_lefts_rightc_section',
                 'settings'    => 'lefts_rightc_section_sidebar_redirect',
                 'tab'   => 'general',
@@ -3515,7 +3515,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                     'footer-column-one' => array(
                         'type'  => 'section',
                         'id'    => 'sidebar-widgets-front-left-sidebar',
-                        'label' => esc_html__( 'Manage left sidebar', 'digital-newspaper' )
+                        'label' => esc_html__( 'Manage left sidebar', 'fairway-finders' )
                     )
                 )
             ))
@@ -3529,8 +3529,8 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Block_Repeater_Control( $wp_customize, 'lefts_rightc_blocks', array(
-                'label'	      => esc_html__( 'Blocks to show in this section', 'digital-newspaper' ),
-                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Blocks to show in this section', 'fairway-finders' ),
+                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_lefts_rightc_section',
                 'settings'    => 'lefts_rightc_blocks'
             ))
@@ -3542,7 +3542,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'lefts_rightc_blocks_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_lefts_rightc_section',
                 'settings'    => 'lefts_rightc_blocks_width_layout_header',
                 'tab'   => 'design'
@@ -3563,15 +3563,15 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3580,7 +3580,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         // Bottom Full Width content section
         $wp_customize->add_section( 'digital_newspaper_bottom_full_width_section', array(
-            'title' => esc_html__( 'Bottom Full Width', 'digital-newspaper' ),
+            'title' => esc_html__( 'Bottom Full Width', 'fairway-finders' ),
             'panel' => 'digital_newspaper_front_sections_panel',
             'priority'  => 50
         ));
@@ -3596,11 +3596,11 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3614,8 +3614,8 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Block_Repeater_Control( $wp_customize, 'bottom_full_width_blocks', array(
-                'label'	      => esc_html__( 'Blocks to show in this section', 'digital-newspaper' ),
-                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Blocks to show in this section', 'fairway-finders' ),
+                'description' => esc_html__( 'Hold bar icon at right of block item and drag vertically to re-order blocks', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_full_width_section',
                 'settings'    => 'bottom_full_width_blocks'
             ))
@@ -3627,7 +3627,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'bottom_full_width_blocks_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_bottom_full_width_section',
                 'settings'    => 'bottom_full_width_blocks_width_layout_header',
                 'tab'   => 'design'
@@ -3648,15 +3648,15 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3665,7 +3665,7 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
 
         // front sections reorder section
         $wp_customize->add_section( 'digital_newspaper_front_sections_reorder_section', array(
-            'title' => esc_html__( 'Reorder sections', 'digital-newspaper' ),
+            'title' => esc_html__( 'Reorder sections', 'fairway-finders' ),
             'panel' => 'digital_newspaper_front_sections_panel',
             'priority'  => 60
         ));
@@ -3682,25 +3682,25 @@ if( !function_exists( 'digital_newspaper_customizer_front_sections_panel' ) ) :
         ));
         $wp_customize->add_control(
             new Digital_Newspaper_WP_Item_Sortable_Control( $wp_customize, 'homepage_content_order', array(
-                'label'         => esc_html__( 'Section Re-order', 'digital-newspaper' ),
-                'description'   => esc_html__( 'Hold item and drag vertically to re-order the items', 'digital-newspaper' ),
+                'label'         => esc_html__( 'Section Re-order', 'fairway-finders' ),
+                'description'   => esc_html__( 'Hold item and drag vertically to re-order the items', 'fairway-finders' ),
                 'section'       => 'digital_newspaper_front_sections_reorder_section',
                 'settings'      => 'homepage_content_order',
                 'fields'    => array(
                     'full_width_section'  => array(
-                        'label' => esc_html__( 'Full width Section', 'digital-newspaper' )
+                        'label' => esc_html__( 'Full width Section', 'fairway-finders' )
                     ),
                     'leftc_rights_section'  => array(
-                        'label' => esc_html__( 'Left Content - Right Sidebar', 'digital-newspaper' )
+                        'label' => esc_html__( 'Left Content - Right Sidebar', 'fairway-finders' )
                     ),
                     'lefts_rightc_section'  => array(
-                        'label' => esc_html__( 'Left Sidebar - Right Content', 'digital-newspaper' )
+                        'label' => esc_html__( 'Left Sidebar - Right Content', 'fairway-finders' )
                     ),
                     'bottom_full_width_section'  => array(
-                        'label' => esc_html__( 'Bottom Full width Section', 'digital-newspaper' )
+                        'label' => esc_html__( 'Bottom Full width Section', 'fairway-finders' )
                     ),
                     'latest_posts'  => array(
-                        'label' => esc_html__( 'Latest Posts / Page Content', 'digital-newspaper' )
+                        'label' => esc_html__( 'Latest Posts / Page Content', 'fairway-finders' )
                     )
                 )
             ))
@@ -3717,13 +3717,13 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
     function digital_newspaper_customizer_blog_post_archive_panel( $wp_customize ) {
         // Blog/Archive/Single panel
         $wp_customize->add_panel( 'digital_newspaper_blog_post_archive_panel', array(
-            'title' => esc_html__( 'Blog / Archive / Single', 'digital-newspaper' ),
+            'title' => esc_html__( 'Blog / Archive / Single', 'fairway-finders' ),
             'priority'  => 72
         ));
         
         // blog / archive section
         $wp_customize->add_section( 'digital_newspaper_blog_archive_section', array(
-            'title' => esc_html__( 'Blog / Archive', 'digital-newspaper' ),
+            'title' => esc_html__( 'Blog / Archive', 'fairway-finders' ),
             'panel' => 'digital_newspaper_blog_post_archive_panel',
             'priority'  => 10
         ));
@@ -3739,11 +3739,11 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3763,11 +3763,11 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                 'priority' => 10,
                 'choices'  => array(
                     'one' => array(
-                        'label' => esc_html__( 'Layout One', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout One', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/archive_one.jpg'
                     ),
                     'two' => array(
-                        'label' => esc_html__( 'Layout Two', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Layout Two', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/archive_two.jpg'
                     )
                 )
@@ -3781,17 +3781,17 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Radio_Tab_Control( $wp_customize, 'archive_pagination_type', array(
-                'label'	      => esc_html__( 'Pagination Type', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Pagination Type', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_blog_archive_section',
                 'settings'    => 'archive_pagination_type',
                 'choices' => array(
                     array(
                         'value' => 'default',
-                        'label' => esc_html__('Default', 'digital-newspaper' )
+                        'label' => esc_html__('Default', 'fairway-finders' )
                     ),
                     array(
                         'value' => 'number',
-                        'label' => esc_html__('Number', 'digital-newspaper' )
+                        'label' => esc_html__('Number', 'fairway-finders' )
                     )
                 )
             ))
@@ -3809,7 +3809,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                     'header-social-icons' => array(
                         'type'  => 'section',
                         'id'    => 'digital_newspaper_buttons_section',
-                        'label' => esc_html__( 'Edit button styles', 'digital-newspaper' )
+                        'label' => esc_html__( 'Edit button styles', 'fairway-finders' )
                     )
                 )
             ))
@@ -3821,7 +3821,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'archive_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_blog_archive_section',
                 'settings'    => 'archive_width_layout_header',
                 'tab'   => 'design'
@@ -3842,15 +3842,15 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3859,7 +3859,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
 
         //  single post section
         $wp_customize->add_section( 'digital_newspaper_single_post_section', array(
-            'title' => esc_html__( 'Single Post', 'digital-newspaper' ),
+            'title' => esc_html__( 'Single Post', 'fairway-finders' ),
             'panel' => 'digital_newspaper_blog_post_archive_panel',
             'priority'  => 20
         ));
@@ -3875,11 +3875,11 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                 'choices'  => array(
                     array(
                         'name'  => 'general',
-                        'title'  => esc_html__( 'General', 'digital-newspaper' )
+                        'title'  => esc_html__( 'General', 'fairway-finders' )
                     ),
                     array(
                         'name'  => 'design',
-                        'title'  => esc_html__( 'Design', 'digital-newspaper' )
+                        'title'  => esc_html__( 'Design', 'fairway-finders' )
                     )
                 )
             ))
@@ -3891,7 +3891,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'single_post_related_posts_header', array(
-                'label'	      => esc_html__( 'Related News', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Related News', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_related_posts_header'
             ))
@@ -3905,7 +3905,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Simple_Toggle_Control( $wp_customize, 'single_post_related_posts_option', array(
-                'label'	      => esc_html__( 'Show related news', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Show related news', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_related_posts_option'
             ))
@@ -3920,7 +3920,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         $wp_customize->add_control( 'single_post_related_posts_title', array(
             'type'      => 'text',
             'section'   => 'digital_newspaper_single_post_section',
-            'label'     => esc_html__( 'Related news title', 'digital-newspaper' )
+            'label'     => esc_html__( 'Related news title', 'fairway-finders' )
         ));
         // Width Layouts setting heading
         $wp_customize->add_setting( 'single_post_width_layout_header', array(
@@ -3928,7 +3928,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'single_post_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_width_layout_header',
                 'tab'   => 'design'
@@ -3949,15 +3949,15 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
                 'tab'   => 'design',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -3972,7 +3972,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'single_post_title_typo', array(
-                'label'	      => esc_html__( 'Post Title', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Title', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_title_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration'),
@@ -3988,7 +3988,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'single_post_meta_typo', array(
-                'label'	      => esc_html__( 'Post Meta', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Meta', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_meta_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration'),
@@ -4004,7 +4004,7 @@ if( !function_exists( 'digital_newspaper_customizer_blog_post_archive_panel' ) )
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Typography_Control( $wp_customize, 'single_post_content_typo', array(
-                'label'	      => esc_html__( 'Post Content', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Post Content', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_single_post_section',
                 'settings'    => 'single_post_content_typo',
                 'fields'    => array( 'font_family', 'font_weight', 'font_size', 'line_height', 'letter_spacing', 'text_transform', 'text_decoration'),
@@ -4023,13 +4023,13 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
     function digital_newspaper_customizer_page_panel( $wp_customize ) {
         // page panel
         $wp_customize->add_panel( 'digital_newspaper_page_panel', array(
-            'title' => esc_html__( 'Pages', 'digital-newspaper' ),
+            'title' => esc_html__( 'Pages', 'fairway-finders' ),
             'priority'  => 73
         ));
 
         // 404 section
         $wp_customize->add_section( 'digital_newspaper_page_section', array(
-            'title' => esc_html__( 'Page', 'digital-newspaper' ),
+            'title' => esc_html__( 'Page', 'fairway-finders' ),
             'panel' => 'digital_newspaper_page_panel',
             'priority'  => 10
         ));
@@ -4040,7 +4040,7 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'single_page_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_page_section',
                 'settings'    => 'single_page_width_layout_header'
             ))
@@ -4059,15 +4059,15 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
                 'section'  => 'digital_newspaper_page_section',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -4076,7 +4076,7 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
 
         // 404 section
         $wp_customize->add_section( 'digital_newspaper_404_section', array(
-            'title' => esc_html__( '404', 'digital-newspaper' ),
+            'title' => esc_html__( '404', 'fairway-finders' ),
             'panel' => 'digital_newspaper_page_panel',
             'priority'  => 20
         ));
@@ -4087,7 +4087,7 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'error_page_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_404_section',
                 'settings'    => 'error_page_width_layout_header'
             ))
@@ -4106,15 +4106,15 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
                 'section'  => 'digital_newspaper_404_section',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )
@@ -4123,7 +4123,7 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
 
         // search page section
         $wp_customize->add_section( 'digital_newspaper_search_page_section', array(
-            'title' => esc_html__( 'Search Page', 'digital-newspaper' ),
+            'title' => esc_html__( 'Search Page', 'fairway-finders' ),
             'panel' => 'digital_newspaper_page_panel',
             'priority'  => 30
         ));
@@ -4134,7 +4134,7 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
         ));
         $wp_customize->add_control( 
             new Digital_Newspaper_WP_Section_Heading_Control( $wp_customize, 'search_page_width_layout_header', array(
-                'label'	      => esc_html__( 'Width Layouts', 'digital-newspaper' ),
+                'label'	      => esc_html__( 'Width Layouts', 'fairway-finders' ),
                 'section'     => 'digital_newspaper_search_page_section',
                 'settings'    => 'search_page_width_layout_header'
             ))
@@ -4153,15 +4153,15 @@ if( !function_exists( 'digital_newspaper_customizer_page_panel' ) ) :
                 'section'  => 'digital_newspaper_search_page_section',
                 'choices'  => array(
                     'global' => array(
-                        'label' => esc_html__( 'Global', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Global', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/global.jpg'
                     ),
                     'boxed--layout' => array(
-                        'label' => esc_html__( 'Boxed', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Boxed', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/boxed_content.jpg'
                     ),
                     'full-width--layout' => array(
-                        'label' => esc_html__( 'Full Width', 'digital-newspaper' ),
+                        'label' => esc_html__( 'Full Width', 'fairway-finders' ),
                         'url'   => '%s/assets/images/customizer/full_content.jpg'
                     )
                 )

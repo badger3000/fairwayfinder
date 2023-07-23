@@ -67,7 +67,7 @@ function digital_newspaper_widget_fields( $instance, $args, $field_value ) {
                                     echo '<p class="description">' .esc_html( $args['description'] ). '</p>';
                                 }
                             ?>
-                            <input class="widefat" id="<?php echo $instance->get_field_id( $args['name'] ); ?>" name="<?php echo $instance->get_field_name( $args['name'] ); ?>" type="url" placeholder="<?php esc_attr_e( 'Add url here . .', 'digital-newspaper' ); ?>" value="<?php echo esc_url( $field_value ); ?>" />
+                            <input class="widefat" id="<?php echo $instance->get_field_id( $args['name'] ); ?>" name="<?php echo $instance->get_field_name( $args['name'] ); ?>" type="url" placeholder="<?php esc_attr_e( 'Add url here . .', 'fairway-finders' ); ?>" value="<?php echo esc_url( $field_value ); ?>" />
                 <?php
                 break;
             case 'textarea' : ?>
@@ -96,11 +96,11 @@ function digital_newspaper_widget_fields( $instance, $args, $field_value ) {
                                 }
                             ?>
                             <div class="upload-trigger<?php if( $field_value ) echo ' selected'; ?>">
-                                <span><?php esc_html_e( 'Add image', 'digital-newspaper' ); ?></span>
+                                <span><?php esc_html_e( 'Add image', 'fairway-finders' ); ?></span>
                             </div>
                             <div class="upload-buttons<?php if( ! $field_value ) echo ' not-selected'; ?>">
                                 <img class="image-holder <?php if( ! $field_value ) echo 'nothasImage'; ?>" src="<?php echo esc_url( $field_value ); ?>">
-                                <button class="button button-link-delete remove-image"><?php esc_html_e( 'Remove image', 'digital-newspaper' ); ?></button>
+                                <button class="button button-link-delete remove-image"><?php esc_html_e( 'Remove image', 'fairway-finders' ); ?></button>
                             </div>
                             <input class="widefat" id="<?php echo $instance->get_field_id( $args['name'] ); ?>" name="<?php echo $instance->get_field_name( $args['name'] ); ?>" type="hidden" value="<?php echo esc_url( $field_value ); ?>" />
                 <?php
@@ -152,7 +152,7 @@ function digital_newspaper_widget_fields( $instance, $args, $field_value ) {
                     ?>
                 <?php
                 break;
-            default : esc_html( 'Undefined control field', 'digital-newspaper' );
+            default : esc_html( 'Undefined control field', 'fairway-finders' );
                 break;
         }
     echo '</div>';

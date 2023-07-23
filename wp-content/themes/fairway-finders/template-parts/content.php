@@ -30,7 +30,7 @@
                     digital_newspaper_posted_by();
                     digital_newspaper_posted_on();
                     digital_newspaper_comments_number();
-                    echo '<span class="read-time">' .digital_newspaper_post_read_time( get_the_content() ). ' ' .esc_html__( 'mins', 'digital-newspaper' ). '</span>';
+                    echo '<span class="read-time">' .digital_newspaper_post_read_time( get_the_content() ). ' ' .esc_html__( 'mins', 'fairway-finders' ). '</span>';
                 ?>
             </div>
             <div class="post-excerpt"><?php the_excerpt(); ?></div>

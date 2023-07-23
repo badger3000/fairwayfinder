@@ -11,9 +11,9 @@ use Digital_Newspaper\CustomizerDefault as DN;
 <section class="no-results not-found">
 	<header class="page-header">
 		<?php if( is_search() ) : ?>
-			<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html( str_replace( '%key%', get_search_query(), sprintf( esc_html__( 'Nothing Found for - %1s', 'digital-newspaper' ), '%key%' ) ) ); ?></h1>
+			<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html( str_replace( '%key%', get_search_query(), sprintf( esc_html__( 'Nothing Found for - %1s', 'fairway-finders' ), '%key%' ) ) ); ?></h1>
 		<?php else : ?>
-			<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html__( 'Nothing Found', 'digital-newspaper' ); ?></h1>
+			<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html__( 'Nothing Found', 'fairway-finders' ); ?></h1>
 		<?php  endif;  ?>
 	</header><!-- .page-header -->
 
@@ -23,7 +23,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'digital-newspaper' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'fairway-finders' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -34,13 +34,13 @@ use Digital_Newspaper\CustomizerDefault as DN;
 			);
 		elseif ( is_search() ) :
 			?>
-			<p><?php echo esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'digital-newspaper' ); ?></p>
+			<p><?php echo esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fairway-finders' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'digital-newspaper' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'fairway-finders' ); ?></p>
 			<?php
 			get_search_form();
 

@@ -21,7 +21,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
 							digital_newspaper_posted_by();
 							digital_newspaper_posted_on();
 							digital_newspaper_comments_number();
-							echo '<span class="read-time">' .digital_newspaper_post_read_time( get_the_content() ). ' ' .esc_html__( 'mins', 'digital-newspaper' ). '</span>';
+							echo '<span class="read-time">' .digital_newspaper_post_read_time( get_the_content() ). ' ' .esc_html__( 'mins', 'fairway-finders' ). '</span>';
 						?>
 					</div><!-- .entry-meta -->
 				<?php endif;
@@ -35,7 +35,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'digital-newspaper' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fairway-finders' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -48,7 +48,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
 
 				wp_link_pages(
 					array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'digital-newspaper' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fairway-finders' ),
 						'after'  => '</div>',
 					)
 				);
@@ -62,8 +62,8 @@ use Digital_Newspaper\CustomizerDefault as DN;
 		<?php
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle"><i class="fas fa-angle-double-left"></i>' . esc_html__( 'Previous:', 'digital-newspaper' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'digital-newspaper' ) . '<i class="fas fa-angle-double-right"></i></span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle"><i class="fas fa-angle-double-left"></i>' . esc_html__( 'Previous:', 'fairway-finders' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'fairway-finders' ) . '<i class="fas fa-angle-double-right"></i></span> <span class="nav-title">%title</span>',
 				)
 			);
 		?>

@@ -12,8 +12,8 @@ class Digital_Newspaper_Category_Collection_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_category_collection_widget',
-            esc_html__( 'Digital Newspaper : Category Collection', 'digital-newspaper' ),
-            array( 'description' => __( 'A collection of post categories.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Category Collection', 'fairway-finders' ),
+            array( 'description' => __( 'A collection of post categories.', 'fairway-finders' ) )
         );
     }
 
@@ -80,7 +80,7 @@ class Digital_Newspaper_Category_Collection_Widget extends WP_Widget {
                                         echo absint( $cat_count );
                                             ?>
                                             <span class="news_text">
-                                                <?php echo esc_html__( 'News', 'digital-newspaper' ); ?>
+                                                <?php echo esc_html__( 'News', 'fairway-finders' ); ?>
                                             </span>
                                             <?php
                                         echo '</span>';
@@ -109,15 +109,15 @@ class Digital_Newspaper_Category_Collection_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Category Collection', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Category Collection', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'posts_categories',
                     'type'      => 'multicheckbox',
-                    'title'     => esc_html__( 'Post Categories', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Choose the categories to display', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Post Categories', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Choose the categories to display', 'fairway-finders' ),
                     'options'   => $categories_options
                 )
             );

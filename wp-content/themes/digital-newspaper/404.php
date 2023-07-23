@@ -35,15 +35,15 @@ get_header();
 						?>
 						<div class="post-inner-wrapper">
 							<header class="page-header">
-								<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html__( '404 Not Found', 'digital-newspaper' ); ?></h1>
+								<h1 class="page-title digital-newspaper-block-title"><?php echo esc_html__( '404 Not Found', 'fairway-finders' ); ?></h1>
 							</header><!-- .page-header -->
 
 							<div class="page-content">
-								<p><?php echo esc_html__( 'It looks like nothing was found at this location. Maybe try another search?', 'digital-newspaper' ); ?></p>
+								<p><?php echo esc_html__( 'It looks like nothing was found at this location. Maybe try another search?', 'fairway-finders' ); ?></p>
 							</div><!-- .page-content -->
 
 							<div class="page-footer">
-								<a class="button-404" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html__( 'Go back to home', 'digital-newspaper' ); ?></a>
+								<a class="button-404" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html__( 'Go back to home', 'fairway-finders' ); ?></a>
 							</div>
 						</div><!-- .post-inner-wrapper -->
 					</section><!-- .error-404 -->

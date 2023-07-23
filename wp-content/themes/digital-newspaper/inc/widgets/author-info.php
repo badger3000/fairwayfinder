@@ -12,8 +12,8 @@ class Digital_Newspaper_Author_Info_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_author_info_widget',
-            esc_html__( 'Digital Newspaper : Author Info', 'digital-newspaper' ),
-            array( 'description' => __( 'The information of  in detail author.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Author Info', 'fairway-finders' ),
+            array( 'description' => __( 'The information of  in detail author.', 'fairway-finders' ) )
         );
     }
 
@@ -68,7 +68,7 @@ class Digital_Newspaper_Author_Info_Widget extends WP_Widget {
      */
     function widget_fields() {
         $admin_users = get_users(array( 'role__not_in' => 'subscriber', 'fields'  => array('ID','display_name')) );
-        $admin_users_options['custom'] = esc_html__( 'Custom', 'digital-newspaper' );
+        $admin_users_options['custom'] = esc_html__( 'Custom', 'fairway-finders' );
         if( $admin_users ) {
             foreach( $admin_users as $admin_user ) {
                 $admin_users_options['author-' . $admin_user->ID] = $admin_user->display_name;
@@ -78,25 +78,25 @@ class Digital_Newspaper_Author_Info_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Author Info', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Author Info', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'author_name',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Author Name', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Author Name', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Author Name', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Author Name', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'author_image',
                     'type'      => 'upload',
-                    'title'     => esc_html__( 'Author Image', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Author Image', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'author_url',
                     'type'      => 'url',
-                    'title'     => esc_html__( 'Author URL', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Author URL', 'fairway-finders' ),
                 )
             );
     }

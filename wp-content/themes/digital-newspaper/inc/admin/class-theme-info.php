@@ -29,7 +29,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
 
         // Initial class load
         function __construct() {
-            $this->theme_name = esc_html__( 'Digital Newspaper', 'digital-newspaper' );
+            $this->theme_name = esc_html__( 'Digital Newspaper', 'fairway-finders' );
             $this->version = wp_get_theme()->get( 'Version' );
             $this->demofile = include get_template_directory() . '/inc/admin/assets/demos.php';
             // some actions of welcome notice
@@ -66,8 +66,8 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
          */
         function add_theme_info_menu() {
             $theme_info = add_theme_page(
-                esc_html__( 'Digital Newspaper Info', 'digital-newspaper' ),
-                esc_html__( 'Digital Newspaper Info','digital-newspaper' ),
+                esc_html__( 'Digital Newspaper Info', 'fairway-finders' ),
+                esc_html__( 'Digital Newspaper Info','fairway-finders' ),
                 'manage_options',
                 'digital-newspaper-info',
                 array( $this, 'info_page_callback' )
@@ -87,33 +87,33 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                     <div class="info-block">
                         <a href="<?php echo esc_url('//doc.blazethemes.com/digital-newspaper/');?>" target="_blank" class="dashicons dashicons-book-alt info-icon"></a>
                         <p class="info-text">
-                            <a href="<?php echo esc_url('//doc.blazethemes.com/digital-newspaper/');?>" target="_blank"><?php esc_html_e( 'Setup Tutorials', 'digital-newspaper' ); ?></a>
+                            <a href="<?php echo esc_url('//doc.blazethemes.com/digital-newspaper/');?>" target="_blank"><?php esc_html_e( 'Setup Tutorials', 'fairway-finders' ); ?></a>
                         </p>
                     </div>
                     <div class="info-block">
                         <a href="<?php echo esc_url( '//www.blazethemes.com/support' ); ?>" target="_blank" class="dashicons dashicons-sos info-icon"></a>
                         <p class="info-text">
-                            <a href="<?php echo esc_url( '//www.blazethemes.com/support' ); ?>" target="_blank"><?php esc_html_e('Support','digital-newspaper'); ?></a>
+                            <a href="<?php echo esc_url( '//www.blazethemes.com/support' ); ?>" target="_blank"><?php esc_html_e('Support','fairway-finders'); ?></a>
                         </p>
                     </div>
                     <div class="info-block">
                         <a href="<?php echo esc_url( '//demo.blazethemes.com/digital-newspaper' ); ?>" target="_blank" class="dashicons dashicons-desktop info-icon"></a>
                         <p class="info-text">
-                            <a href="<?php echo esc_url( '//demo.blazethemes.com/digital-newspaper' ); ?>" target="_blank"><?php esc_html_e('Theme demo','digital-newspaper'); ?></a>
+                            <a href="<?php echo esc_url( '//demo.blazethemes.com/digital-newspaper' ); ?>" target="_blank"><?php esc_html_e('Theme demo','fairway-finders'); ?></a>
                         </p>
                     </div>
                 </div><!-- .info-container -->
                 <div class="theme-demos-listing">
-                    <h2 class="info-title"><?php esc_html_e( 'All Prebuilt Demos', 'digital-newspaper' ); ?></h2>
+                    <h2 class="info-title"><?php esc_html_e( 'All Prebuilt Demos', 'fairway-finders' ); ?></h2>
                     <div class="demo-importer-actions">
                         <?php
                             $this->importer_status = $this->plugin_active_status('blaze-demo-importer/blaze-demo-importer.php');
                             switch( $this->importer_status ) {
-                                case 'inactive' : printf( esc_html__( 'Activate Blazethemes Demo Importer Now and Import any available demo in One Click', 'digital-newspaper') . ' %s', '<button class="digital-newspaper-importer-action-trigger" data-action="activate" data-process="' .esc_html( "Activating plugin" ). '">' .esc_html( 'Activate Plugin' ). '</button>' );
+                                case 'inactive' : printf( esc_html__( 'Activate Blazethemes Demo Importer Now and Import any available demo in One Click', 'fairway-finders') . ' %s', '<button class="digital-newspaper-importer-action-trigger" data-action="activate" data-process="' .esc_html( "Activating plugin" ). '">' .esc_html( 'Activate Plugin' ). '</button>' );
                                                 break;
-                                case 'install'  : printf( esc_html__( 'Install BlazeThemes Demo Importer and Import any available demo in One Click', 'digital-newspaper') . ' %s', '<button class="digital-newspaper-importer-action-trigger" data-action="install" data-process="' .esc_html( "Installing plugin" ). '">' .esc_html( 'Install and Activate Plugin' ). '</button>' );
+                                case 'install'  : printf( esc_html__( 'Install BlazeThemes Demo Importer and Import any available demo in One Click', 'fairway-finders') . ' %s', '<button class="digital-newspaper-importer-action-trigger" data-action="install" data-process="' .esc_html( "Installing plugin" ). '">' .esc_html( 'Install and Activate Plugin' ). '</button>' );
                                                 break;
-                                        default: esc_html_e( 'All Ready for demo import!! Setup your site exactly like demo', 'digital-newspaper' );
+                                        default: esc_html_e( 'All Ready for demo import!! Setup your site exactly like demo', 'fairway-finders' );
                             }
                         ?>
                     </div>
@@ -150,7 +150,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                                     ?>
                                     <div class="blaze-demo-importer-tab-group" data-filter-group="tag">
                                         <div class="blaze-demo-importer-tab blaze-demo-importer-active" data-filter="*">
-                                            <?php esc_html_e('All', 'digital-newspaper'); ?>
+                                            <?php esc_html_e('All', 'fairway-finders'); ?>
                                         </div>
                                     </div>
                                     <?php
@@ -181,20 +181,20 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                                         <h4><?php echo esc_html($demo_pack['name']); ?></h4>
                                         <div class="blaze-demo-importer-demo-buttons">
                                             <a href="<?php echo esc_url($demo_pack['preview_url']); ?>" target="_blank" class="button">
-                                                <?php echo esc_html__('Preview', 'digital-newspaper'); ?>
+                                                <?php echo esc_html__('Preview', 'fairway-finders'); ?>
                                             </a>
                                             <?php
                                                 if ( $type == 'pro' && ! strpos( get_option('stylesheet'), 'pro' ) ) {
                                                     $buy_url = isset($demo_pack['buy_url']) ? $demo_pack['buy_url'] : '#';
                                                 ?>
                                                     <a target="_blank" href="<?php echo esc_url($buy_url) ?>" class="button button-primary">
-                                                        <?php echo esc_html__('Buy Now', 'digital-newspaper') ?>
+                                                        <?php echo esc_html__('Buy Now', 'fairway-finders') ?>
                                                     </a>
                                             <?php } else {
                                                         if( $this->importer_status === 'active' ) {
                                                 ?>
                                                             <a href="#blaze-demo-importer-modal-<?php echo esc_attr($demo_slug) ?>" class="blaze-demo-importer-modal-button button button-primary">
-                                                                <?php echo esc_html__('Install', 'digital-newspaper') ?>
+                                                                <?php echo esc_html__('Install', 'fairway-finders') ?>
                                                             </a>
                                             <?php
                                                         }
@@ -217,7 +217,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
             <?php } else {
                     ?>
                     <div class="blaze-demo-importer-demo-wrap">
-                        <?php esc_html_e("It looks like the config file for the demos is missing or conatins errors!. Demo install can't go futher!", 'digital-newspaper'); ?>
+                        <?php esc_html_e("It looks like the config file for the demos is missing or conatins errors!. Demo install can't go futher!", 'fairway-finders'); ?>
                     </div>
                 <?php }
                 ?>
@@ -230,18 +230,18 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                         <div id="blaze-demo-importer-modal-<?php echo esc_attr($demo_slug) ?>" class="blaze-demo-importer-modal" style="display: none;">
 
                             <div class="blaze-demo-importer-modal-header">
-                                <h2><?php printf(esc_html('Import %s Demo', 'digital-newspaper'), esc_html($demo_pack['name'])); ?></h2>
+                                <h2><?php printf(esc_html('Import %s Demo', 'fairway-finders'), esc_html($demo_pack['name'])); ?></h2>
                                 <div class="blaze-demo-importer-modal-back"><span class="dashicons dashicons-no-alt"></span></div>
                             </div>
 
                             <div class="blaze-demo-importer-modal-wrap">
-                                <p><?php echo sprintf(esc_html__('We recommend you backup your website content before attempting to import the demo so that you can recover your website if something goes wrong. You can use %s plugin for it.', 'digital-newspaper'), '<a href="https://wordpress.org/plugins/all-in-one-wp-migration/" target="_blank">' . esc_html__('All in one migration', 'digital-newspaper') . '</a>'); ?></p>
+                                <p><?php echo sprintf(esc_html__('We recommend you backup your website content before attempting to import the demo so that you can recover your website if something goes wrong. You can use %s plugin for it.', 'fairway-finders'), '<a href="https://wordpress.org/plugins/all-in-one-wp-migration/" target="_blank">' . esc_html__('All in one migration', 'fairway-finders') . '</a>'); ?></p>
 
-                                <p><?php echo esc_html__('This process will install all the required plugins, import contents and setup customizer and theme options.', 'digital-newspaper'); ?></p>
+                                <p><?php echo esc_html__('This process will install all the required plugins, import contents and setup customizer and theme options.', 'fairway-finders'); ?></p>
 
                                 <div class="blaze-demo-importer-modal-recommended-plugins">
-                                    <h4><?php esc_html_e('Required Plugins', 'digital-newspaper'); ?></h4>
-                                    <p><?php esc_html_e('For your website to look exactly like the demo,the import process will install and activate the following plugin if they are not installed or activated.', 'digital-newspaper'); ?></p>
+                                    <h4><?php esc_html_e('Required Plugins', 'fairway-finders'); ?></h4>
+                                    <p><?php esc_html_e('For your website to look exactly like the demo,the import process will install and activate the following plugin if they are not installed or activated.', 'fairway-finders'); ?></p>
                                     <?php
                                     $plugins = isset( $demo_pack['plugins'] ) ? $demo_pack['plugins'] : '';
 
@@ -272,7 +272,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                                     } else {
                                         ?>
                                         <ul>
-                                            <li><?php esc_html_e('No Required Plugins Found.', 'digital-newspaper'); ?></li>
+                                            <li><?php esc_html_e('No Required Plugins Found.', 'fairway-finders'); ?></li>
                                         </ul>
                                         <?php
                                     }
@@ -280,17 +280,17 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                                 </div>
 
                                 <div class="blaze-demo-importer-reset-checkbox">
-                                    <h4><?php esc_html_e('Reset Website', 'digital-newspaper') ?></h4>
-                                    <p><?php esc_html_e('Reseting the website will delete all your post, pages, custom post types, categories, taxonomies, images and all other customizer and theme option settings.', 'digital-newspaper') ?></p>
-                                    <p><?php esc_html_e('It is always recommended to reset the database for a complete demo import.', 'digital-newspaper') ?></p>
+                                    <h4><?php esc_html_e('Reset Website', 'fairway-finders') ?></h4>
+                                    <p><?php esc_html_e('Reseting the website will delete all your post, pages, custom post types, categories, taxonomies, images and all other customizer and theme option settings.', 'fairway-finders') ?></p>
+                                    <p><?php esc_html_e('It is always recommended to reset the database for a complete demo import.', 'fairway-finders') ?></p>
                                     <label class="blaze-demo-importer-reset-website-checkbox">
                                         <input id="checkbox-reset-<?php echo esc_attr($demo_slug); ?>" type="checkbox" value='1' checked="checked"/>
-                                        <?php echo esc_html('Reset Website - Check this box only if you are sure to reset the website.', 'digital-newspaper'); ?>
+                                        <?php echo esc_html('Reset Website - Check this box only if you are sure to reset the website.', 'fairway-finders'); ?>
                                     </label>
                                 </div>
 
-                                <a href="javascript:void(0)" data-demo-slug="<?php echo esc_attr($demo_slug) ?>" class="button button-primary blaze-demo-importer-import-demo"><?php esc_html_e('Import Demo', 'digital-newspaper'); ?></a>
-                                <a href="javascript:void(0)" class="button blaze-demo-importer-modal-cancel"><?php esc_html_e('Cancel', 'digital-newspaper'); ?></a>
+                                <a href="javascript:void(0)" data-demo-slug="<?php echo esc_attr($demo_slug) ?>" class="button button-primary blaze-demo-importer-import-demo"><?php esc_html_e('Import Demo', 'fairway-finders'); ?></a>
+                                <a href="javascript:void(0)" class="button blaze-demo-importer-modal-cancel"><?php esc_html_e('Cancel', 'fairway-finders'); ?></a>
                             </div>
                         </div>
                         <?php
@@ -298,7 +298,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                 }
                 ?>
                 <div id="blaze-demo-importer-import-progress" style="display: none">
-                    <h2 class="blaze-demo-importer-import-progress-header"><?php echo esc_html__('Demo Import Progress', 'digital-newspaper'); ?></h2>
+                    <h2 class="blaze-demo-importer-import-progress-header"><?php echo esc_html__('Demo Import Progress', 'fairway-finders'); ?></h2>
 
                     <div class="blaze-demo-importer-import-progress-wrap">
                     <div class="blaze-demo-importer-import-progress-message"><div class="message-item"></div></div>
@@ -309,7 +309,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                         <div class="blaze-demo-importer-import-progress-bar">
                             <div class="loaderBar"></div>
                         </div>
-                        <span class="progress-bar-note"><?php esc_html_e( 'Demo import success', 'digital-newspaper' ); ?></span>
+                        <span class="progress-bar-note"><?php esc_html_e( 'Demo import success', 'fairway-finders' ); ?></span>
                     </div>
                 </div>
             </div>
@@ -333,15 +333,15 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
         public function get_plugin_status($status) {
             switch ($status) {
                 case 'install':
-                    $plugin_status = esc_html__('Not Installed', 'digital-newspaper');
+                    $plugin_status = esc_html__('Not Installed', 'fairway-finders');
                     break;
 
                 case 'active':
-                    $plugin_status = esc_html__('Installed and Active', 'digital-newspaper');
+                    $plugin_status = esc_html__('Installed and Active', 'fairway-finders');
                     break;
 
                 case 'inactive':
-                    $plugin_status = esc_html__('Installed but Not Active', 'digital-newspaper');
+                    $plugin_status = esc_html__('Installed but Not Active', 'fairway-finders');
                     break;
             }
             return $plugin_status;
@@ -360,7 +360,7 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                     activate_plugin( $file_path, '', false, true );
                 }
                 $this->ajax_response['status'] = true;
-                $this->ajax_response['message'] = esc_html__( 'Demo importer plugin activated', 'digital-newspaper' );
+                $this->ajax_response['message'] = esc_html__( 'Demo importer plugin activated', 'fairway-finders' );
                 $this->send_ajax_response();
             } else if( $_plugin_action === 'install' ) {
                 $download_link = esc_url( 'https://downloads.wordpress.org/plugin/blaze-demo-importer.zip' );
@@ -373,11 +373,11 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
                 $upgrader->install( $download_link );
                 activate_plugin( $file_path, '', false, true );
                 $this->ajax_response['status'] = true;
-                $this->ajax_response['message'] = esc_html__( 'Demo importer plugin installed and activated', 'digital-newspaper' );
+                $this->ajax_response['message'] = esc_html__( 'Demo importer plugin installed and activated', 'fairway-finders' );
                 $this->send_ajax_response();
             }
             $this->ajax_response['status'] = false;
-            $this->ajax_response['message'] = esc_html__( 'Error while trying to install or active the plugin.', 'digital-newspaper' );
+            $this->ajax_response['message'] = esc_html__( 'Error while trying to install or active the plugin.', 'fairway-finders' );
             $this->send_ajax_response();
         }
 
@@ -406,23 +406,23 @@ if( !class_exists( 'Digital_Newspaper_Theme_Info' ) ) :
             }
         ?>
             <div class="digital-newspaper-welcome-notice notice notice-info is-dismissible">
-                <h2><?php esc_html_e( 'Digital Newspaper Welcome Notice', 'digital-newspaper' ); ?></h2>
+                <h2><?php esc_html_e( 'Digital Newspaper Welcome Notice', 'fairway-finders' ); ?></h2>
                 <div class="notice-content-wrap">
                     <div class="screenshot-wrap">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/screenshot.png' ); ?>" height="200" height="200"/>
                     </div>
                     <div class="notice-content">
-                        <span class="notice-highlight"><?php esc_html_e( 'You have successfully activated Digital Newspaper Premium Version!! ', 'digital-newspaper' ); ?></span>
-                        <p><?php esc_html_e( 'Get started with multipurpose magazine theme and give your site a new look. We recommend you to please go through the documentation to get started with theme and setup homepage quicky.', 'digital-newspaper' ); ?></p>
+                        <span class="notice-highlight"><?php esc_html_e( 'You have successfully activated Digital Newspaper Premium Version!! ', 'fairway-finders' ); ?></span>
+                        <p><?php esc_html_e( 'Get started with multipurpose magazine theme and give your site a new look. We recommend you to please go through the documentation to get started with theme and setup homepage quicky.', 'fairway-finders' ); ?></p>
                         <div class="notice-actions">
-                            <a class="button button-primary load-customize hide-if-no-customize" href="<?php echo esc_url( get_admin_url() . '/themes.php?page=digital-newspaper-info' ); ?>"><?php esc_html_e( 'Install Demos', 'digital-newspaper' ); ?></a>
-                            <a class="button button-primary load-customize hide-if-no-customize" target="_blank" href="<?php echo esc_url( get_admin_url( '', 'customize.php' ) ); ?>"><?php esc_html_e( 'Customize Site', 'digital-newspaper' ); ?></a>
-                            <a class="button button-primary load-customize hide-if-no-customize" target="_blank" href="<?php echo esc_url( '//doc.blazethemes.com/digital-newspaper/ '); ?>"><?php esc_html_e( 'Documentation', 'digital-newspaper' ); ?></a>
+                            <a class="button button-primary load-customize hide-if-no-customize" href="<?php echo esc_url( get_admin_url() . '/themes.php?page=digital-newspaper-info' ); ?>"><?php esc_html_e( 'Install Demos', 'fairway-finders' ); ?></a>
+                            <a class="button button-primary load-customize hide-if-no-customize" target="_blank" href="<?php echo esc_url( get_admin_url( '', 'customize.php' ) ); ?>"><?php esc_html_e( 'Customize Site', 'fairway-finders' ); ?></a>
+                            <a class="button button-primary load-customize hide-if-no-customize" target="_blank" href="<?php echo esc_url( '//doc.blazethemes.com/digital-newspaper/ '); ?>"><?php esc_html_e( 'Documentation', 'fairway-finders' ); ?></a>
                         </div>
                     </div>
                 </div><!-- .notice-content-wrap -->
                 <div class="notice-dismiss-button">
-                    <a class="" href="<?php echo esc_attr( '?digital_newspaper_pro_welcome_notice_dismiss=1' ); ?>"><?php esc_html_e( 'Dismiss this notice', 'digital-newspaper' ); ?></a>
+                    <a class="" href="<?php echo esc_attr( '?digital_newspaper_pro_welcome_notice_dismiss=1' ); ?>"><?php esc_html_e( 'Dismiss this notice', 'fairway-finders' ); ?></a>
                 </div>
             </div>
             <?php

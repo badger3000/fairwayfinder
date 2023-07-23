@@ -296,7 +296,7 @@ function digital_newspaper_bottom_footer_menu_part_selective_refresh() {
              else :
                 if ( is_user_logged_in() && current_user_can( 'edit_theme_options' ) ) {
                    ?>
-                      <a href="<?php echo esc_url( admin_url( '/nav-menus.php?action=locations' ) ); ?>"><?php esc_html_e( 'Setup Bottom Footer Menu', 'digital-newspaper' ); ?></a>
+                      <a href="<?php echo esc_url( admin_url( '/nav-menus.php?action=locations' ) ); ?>"><?php esc_html_e( 'Setup Bottom Footer Menu', 'fairway-finders' ); ?></a>
                    <?php
                 }
              endif;

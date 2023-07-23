@@ -106,7 +106,7 @@ use Digital_Newspaper\CustomizerDefault as DN;
                     <span></span>
                     <span></span>
                 </div>
-                <span class="menu_txt"><?php esc_html_e( 'Menu', 'digital-newspaper' ); ?></span></button>
+                <span class="menu_txt"><?php esc_html_e( 'Menu', 'fairway-finders' ); ?></span></button>
             <?php
                 wp_nav_menu(
                     array(

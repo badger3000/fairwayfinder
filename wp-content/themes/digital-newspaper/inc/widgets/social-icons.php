@@ -13,8 +13,8 @@ class Digital_Newspaper_Social_Icons_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'digital_newspaper_social_icons_widget',
-            esc_html__( 'Digital Newspaper : Social Icons', 'digital-newspaper' ),
-            array( 'description' => __( 'The list of social icons.', 'digital-newspaper' ) )
+            esc_html__( 'Digital Newspaper : Social Icons', 'fairway-finders' ),
+            array( 'description' => __( 'The list of social icons.', 'fairway-finders' ) )
         );
     }
 
@@ -53,14 +53,14 @@ class Digital_Newspaper_Social_Icons_Widget extends WP_Widget {
                 array(
                     'name'      => 'widget_title',
                     'type'      => 'text',
-                    'title'     => esc_html__( 'Widget Title', 'digital-newspaper' ),
-                    'description'=> esc_html__( 'Add the widget title here', 'digital-newspaper' ),
-                    'default'   => esc_html__( 'Find Me On', 'digital-newspaper' )
+                    'title'     => esc_html__( 'Widget Title', 'fairway-finders' ),
+                    'description'=> esc_html__( 'Add the widget title here', 'fairway-finders' ),
+                    'default'   => esc_html__( 'Find Me On', 'fairway-finders' )
                 ),
                 array(
                     'name'      => 'icon_inherit_color',
                     'type'      => 'checkbox',
-                    'title'     => esc_html__( 'Inherit global default social icons color', 'digital-newspaper' ),
+                    'title'     => esc_html__( 'Inherit global default social icons color', 'fairway-finders' ),
                     'default'   => true
                 )
             );
@@ -88,8 +88,8 @@ class Digital_Newspaper_Social_Icons_Widget extends WP_Widget {
     ?>
             <div class="refer-note">
                 <p>
-                    <?php esc_html_e( 'Manage social icons from customizer ', 'digital-newspaper' ); ?>
-                    <a href="<?php echo esc_url(admin_url( 'customize.php?autofocus[control]=social_icons' )); ?>" target="_blank"><?php esc_html_e( 'go to manage social icons', 'digital-newspaper' ); ?></a>
+                    <?php esc_html_e( 'Manage social icons from customizer ', 'fairway-finders' ); ?>
+                    <a href="<?php echo esc_url(admin_url( 'customize.php?autofocus[control]=social_icons' )); ?>" target="_blank"><?php esc_html_e( 'go to manage social icons', 'fairway-finders' ); ?></a>
                 </p>
             </div>
     <?php

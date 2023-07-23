@@ -24,7 +24,7 @@ $demos_array = array(
             'pro' => 'Free'
         )
     ),
-    'digital-newspaper' => array(
+    'fairway-finders' => array(
         'name' => 'Default',
         'type' => 'free',
         'buy_url'=> 'https://blazethemes.com/theme/digital-newspaper-pro/',

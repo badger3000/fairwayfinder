@@ -26,14 +26,14 @@ if ( ! defined( 'DIGITAL_NEWSPAPER_PREFIX' ) ) {
  * as indicating support for post thumbnails.
  */
 function digital_newspaper_setup() {
-	$nprefix = 'digital-newspaper-';
+	$nprefix = 'fairway-finders-';
 	/*
 	* Make theme available for translation.
 	* Translations can be filed in the /languages/ directory.
 	* If you're building a theme based on Digital Newspaper, use a find and replace
-	* to change 'digital-newspaper' to the name of your theme in all the template files.
+	* to change 'fairway-finders' to the name of your theme in all the template files.
 	*/
-	load_theme_textdomain( 'digital-newspaper', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'fairway-finders', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -63,9 +63,9 @@ function digital_newspaper_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Top Header', 'digital-newspaper' ),
-			'menu-2' => esc_html__( 'Main Header', 'digital-newspaper' ),
-			'menu-3' => esc_html__( 'Bottom Footer', 'digital-newspaper' )
+			'menu-1' => esc_html__( 'Top Header', 'fairway-finders' ),
+			'menu-2' => esc_html__( 'Main Header', 'fairway-finders' ),
+			'menu-3' => esc_html__( 'Bottom Footer', 'fairway-finders' )
 		)
 	);
 

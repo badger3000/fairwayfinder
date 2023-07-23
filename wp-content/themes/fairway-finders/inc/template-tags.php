@@ -67,7 +67,7 @@ if ( ! function_exists( 'digital_newspaper_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'digital-newspaper' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'fairway-finders' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -84,7 +84,7 @@ if ( ! function_exists( 'digital_newspaper_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'digital-newspaper' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'fairway-finders' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -107,10 +107,10 @@ if( ! function_exists( 'digital_newspaper_categories_list' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'digital-newspaper' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'fairway-finders' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'digital-newspaper' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'fairway-finders' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 	}
@@ -127,7 +127,7 @@ if( ! function_exists( 'digital_newspaper_tags_list' ) ) :
 			$tags_list = get_the_tag_list( '', ' ' );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged: %1$s', 'digital-newspaper' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged: %1$s', 'fairway-finders' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 	}
@@ -212,7 +212,7 @@ if( ! function_exists( 'digital_newspaper_get_published_date' ) ) :
 		$site_date_format = DN\digital_newspaper_get_customizer_option( 'site_date_format' );
 		$n_date = $site_date_format == 'default' ? 
 												$post_id ? get_the_date('', $post_id) : get_the_date() : 
-												human_time_diff($post_id ? get_the_time('U',$post_id) : get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'digital-newspaper');
+												human_time_diff($post_id ? get_the_time('U',$post_id) : get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'fairway-finders');
 		return apply_filters( "digital_newspaper_inherit_published_date", $n_date );
 	}
 endif;
@@ -223,7 +223,7 @@ if( ! function_exists( 'digital_newspaper_get_modified_date' ) ) :
 		$site_date_format = DN\digital_newspaper_get_customizer_option( 'site_date_format' );
 		$n_date = $site_date_format == 'default' ? 
 											$post_id ? get_the_modified_date('', $post_id) : get_the_modified_date() : 
-												human_time_diff($post_id ? get_the_modified_time('U', $post_id): get_the_modified_time('U'), current_time('timestamp')) .' '. __('ago', 'digital-newspaper');
+												human_time_diff($post_id ? get_the_modified_time('U', $post_id): get_the_modified_time('U'), current_time('timestamp')) .' '. __('ago', 'fairway-finders');
 		return apply_filters( "digital_newspaper_inherit_published_date", $n_date );
 	}
 endif;
