@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: process.env.ROOT_PASSWORD;
+      MYSQL_DATABASE: process.env.DB_NAME
+      MYSQL_USER: process.env.DB_USER
+      MYSQL_PASSWORD: process.env.ROOT_PASSWORD
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    environment:
+      WORDPRESS_DB_HOST: process.env.DB_HOST
+      WORDPRESS_DB_USER: process.env.DB_USER
+      WORDPRESS_DB_PASSWORD: process.env.ROOT_PASSWORD
+      WORDPRESS_DB_NAME: process.env.DB_NAME
+volumes:
+  db_data:
